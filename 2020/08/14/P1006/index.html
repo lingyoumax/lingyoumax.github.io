@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="题目描述棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。    棋盘用坐标表示，A 点 (0, 0)、B 点 (n, m)，同样马的位置坐标是需要给出的。    现在要求你计算出卒从 A 点能够到达 B 点的路径的条数，假设马的位置是固定不动的，并">
+  <meta name="description" content="题目描述小渊和小轩是好朋友也是同班同学，他们在一起总有谈不完的话题。一次素质拓展活动中，班上同学安排做成一个 m 行 n 列的矩阵，而小渊和小轩被安排在矩阵对角线的两端，因此，他们就无法直接交谈了。幸运的是，他们可以通过传纸条来进行交流。纸条要经由许多同学传到对方手里，小渊坐在矩阵的左上角，坐标 (1,1)，小轩坐在矩阵的右下角，坐标 (m,n)。从小渊传到小轩的纸条只可以向下或者向右传递，从小轩">
 <meta property="og:type" content="article">
-<meta property="og:title" content="P1002（过河卒）">
-<meta property="og:url" content="http://yoursite.com/2020/08/14/P1002/index.html">
+<meta property="og:title" content="P1006（传纸条）">
+<meta property="og:url" content="http://yoursite.com/2020/08/14/P1006/index.html">
 <meta property="og:site_name" content="呤游的家">
-<meta property="og:description" content="题目描述棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。    棋盘用坐标表示，A 点 (0, 0)、B 点 (n, m)，同样马的位置坐标是需要给出的。    现在要求你计算出卒从 A 点能够到达 B 点的路径的条数，假设马的位置是固定不动的，并">
+<meta property="og:description" content="题目描述小渊和小轩是好朋友也是同班同学，他们在一起总有谈不完的话题。一次素质拓展活动中，班上同学安排做成一个 m 行 n 列的矩阵，而小渊和小轩被安排在矩阵对角线的两端，因此，他们就无法直接交谈了。幸运的是，他们可以通过传纸条来进行交流。纸条要经由许多同学传到对方手里，小渊坐在矩阵的左上角，坐标 (1,1)，小轩坐在矩阵的右下角，坐标 (m,n)。从小渊传到小轩的纸条只可以向下或者向右传递，从小轩">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-08-14T00:44:27.000Z">
-<meta property="article:modified_time" content="2020-08-14T02:34:47.309Z">
+<meta property="article:published_time" content="2020-08-14T02:46:21.000Z">
+<meta property="article:modified_time" content="2020-08-14T02:51:41.068Z">
 <meta property="article:author" content="lingyoumax">
-<meta property="article:tag" content="普及-">
+<meta property="article:tag" content="普及+&#x2F;提高">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/08/14/P1002/">
+<link rel="canonical" href="http://yoursite.com/2020/08/14/P1006/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>P1002（过河卒） | 呤游的家</title>
+  <title>P1006（传纸条） | 呤游的家</title>
   
 
 
@@ -161,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/14/P1002/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/14/P1006/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -174,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          P1002（过河卒）
+          P1006（传纸条）
         </h1>
 
         <div class="post-meta">
@@ -185,7 +185,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-14 08:44:27 / 修改时间：10:34:47" itemprop="dateCreated datePublished" datetime="2020-08-14T08:44:27+08:00">2020-08-14</time>
+              <time title="创建时间：2020-08-14 10:46:21 / 修改时间：10:51:41" itemprop="dateCreated datePublished" datetime="2020-08-14T10:46:21+08:00">2020-08-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -208,19 +208,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。   </p>
-<p>棋盘用坐标表示，A 点 (0, 0)、B 点 (n, m)，同样马的位置坐标是需要给出的。   </p>
-<p>现在要求你计算出卒从 A 点能够到达 B 点的路径的条数，假设马的位置是固定不动的，并不是卒走一步马走一步。<br><a id="more"></a></p>
-<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>一行四个正整数，分别表示 B 点坐标和马的坐标。</p>
-<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>一个整数，表示所有的路径条数。</p>
-<h1 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h1><p>对于 100 % 的数据，$ 1 \le n,m \le 20 ,0 \le $ 马的坐标 $ \le 20 $</p>
-<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>这一道题，我做了大概半天，感悟良多，其中，最重要的是感叹自己基础不够，没有把这个问题考虑透彻。   </p>
-<p>参考了大佬们的思路，磕磕碰碰总算写出来了。   </p>
-<p>在编程中，最简单又最容易碰到的问题是数组越界，可是我却没有考虑清楚，还有马的位置会影响棋盘边界能否让卒落脚，这是一个简单的问题，却也是复杂的问题。   </p>
-<p>最开始我的写法是用一个30*30的数组暴力遍历所有棋盘上的点，但是我后来想到卒只能向下或向右移动，也就是说B点以后的点是影响不了B点的值得，所以只用考虑B点和A点围城的一个矩形的范围内的棋点。   </p>
-<p>同时，由于第一行的数据在计算完第二行的数据之后就没用了，第二行计算完第三行的数据就没用了，所以可以采用滚动数组的方式去遍历整个棋盘。   </p>
+        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小渊和小轩是好朋友也是同班同学，他们在一起总有谈不完的话题。一次素质拓展活动中，班上同学安排做成一个 m 行 n 列的矩阵，而小渊和小轩被安排在矩阵对角线的两端，因此，他们就无法直接交谈了。幸运的是，他们可以通过传纸条来进行交流。纸条要经由许多同学传到对方手里，小渊坐在矩阵的左上角，坐标 (1,1)，小轩坐在矩阵的右下角，坐标 (m,n)。从小渊传到小轩的纸条只可以向下或者向右传递，从小轩传给小渊的纸条只可以向上或者向左传递。   </p>
+<p>在活动进行中，小渊希望给小轩传递一张纸条，同时希望小轩给他回复。班里每个同学都可以帮他们传递，但只会帮他们一次，也就是说如果此人在小渊递给小轩纸条的时候帮忙，那么在小轩递给小渊的时候就不会再帮忙。反之亦然。   </p>
+<p>还有一件事情需要注意，全班每个同学愿意帮忙的好感度有高有低（注意：小渊和小轩的好心程度没有定义，输入时用 0 表示），可以用一个 [0,100] 内的自然数来表示，数越大表示越好心。小渊和小轩希望尽可能找好心程度高的同学来帮忙传纸条，即找到来回两条传递路径，使得这两条路径上同学的好心程度之和最大。现在，请你帮助小渊和小轩找到这样的两条路径。<br><a id="more"></a></p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>第一行有两个用空格隔开的整数 m 和 n，表示班里有 m 行 n列。   </p>
+<p>接下来的 m 行是一个 $m\times n$ 的矩阵，矩阵中第 i 行 j 列的整数表示坐在第 i 行 j 列的学生的好心程度。每行的 n 个整数之间用空格隔开。</p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>输出文件共一行一个整数，表示来回两条路上参与传递纸条的学生的好心程度之和的最大值。</p>
+<h1 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h1><p>对于 $30\%$ 的数据，$1 \le m,n \le 10$； 对于 $ 100\% $ 的数据满足：$ 1 \le m,n \le 50 $</p>
+<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>这题比较重要的一个点是每个同学只能帮一次传纸条，（上课就要好好听讲，帮你传一次已经够朋友了）和P1004不一样的是，两条路线不能交叉，除了小渊处和小轩处能够交叉，这么样的话，我们可以看成小渊同时发送两条纸条，且两条纸条传递的路线是不能重合的，直到两个纸条都传到小轩手里。   </p>
+<p>注意到，两条路线不交叉的话，那么在相同步数的情况下，必然有一条路线的终点的行数大于另一条路线的终点的行数，这样的话，我看到很多人用了二维数组去表示在当前步数下好感度之和，但是这样会浪费一半的存储空间，很可怕，作为艰苦的朴素人，我把它降到了一维，用f[(j*(j+1))/2+i]表示代替那些大佬们的f[i][j]，注意了，这里的j是大于i的，因为我上面说了有一条路径的终点的行数大于另一条路径的终点的行数，所以我假定了第一条的路径的终点的行数要小一些。    </p>
+<p>由于这一题的特殊性，我让步数的起始值为3，行数和列数必须至少加一，且两个中一个行数加二，一个列数加二。并且看到小轩处的好感度为0，所以我们一条路径到了小轩左边，一条到了小轩上面就可以结束了，所以我们步数的终止值为(m+n-1)。   </p>
 <p>Talking is cheap,show you my code.</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ull unsigned long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line">ull f[<span class="number">23</span>];</span><br><span class="line"><span class="keyword">bool</span> s[<span class="number">23</span>][<span class="number">23</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> bx, by, mx, my;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; bx &gt;&gt; by &gt;&gt; mx &gt;&gt; my;</span><br><span class="line">    bx+=<span class="number">2</span>;</span><br><span class="line">    by+=<span class="number">2</span>;</span><br><span class="line">    mx+=<span class="number">2</span>;</span><br><span class="line">    my+=<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">int</span> x[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">-1</span>,<span class="number">-1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">-2</span>,<span class="number">-2</span>&#125;;</span><br><span class="line">    <span class="keyword">int</span> y[] = &#123;<span class="number">0</span>,<span class="number">2</span>,<span class="number">-2</span>,<span class="number">2</span>,<span class="number">-2</span>,<span class="number">1</span>,<span class="number">-1</span>,<span class="number">1</span>,<span class="number">-1</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt;= <span class="number">8</span>;i++) &#123;</span><br><span class="line">        s[mx + x[i]][my + y[i]] = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    f[<span class="number">2</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>;i &lt;= bx;i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span>;j &lt;= by;j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s[i][j]) &#123;</span><br><span class="line">                f[j] = <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                f[j] +=f[j<span class="number">-1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; f[by];</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> m_num = <span class="number">50</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> n_num = <span class="number">50</span>;</span><br><span class="line">ll f[(m_num*(m_num+<span class="number">1</span>)) / <span class="number">2</span>];</span><br><span class="line">ll <span class="built_in">map</span>[m_num+<span class="number">1</span>][m_num+n_num<span class="number">-1</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> m, n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; m &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; m;i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; n;j++) &#123;</span><br><span class="line">            <span class="built_in">cin</span> &gt;&gt; <span class="built_in">map</span>[i+<span class="number">1</span>][j+<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">3</span>;l &lt;(m+n);l++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = m;i &gt;= <span class="number">1</span>;i--) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = m;j &gt; i;j--) &#123;</span><br><span class="line">                f[(j*(j + <span class="number">1</span>)) / <span class="number">2</span> + i] = max(max(f[(j*(j + <span class="number">1</span>)) / <span class="number">2</span> + i], f[(j*(j - <span class="number">1</span>)) / <span class="number">2</span> + i - <span class="number">1</span>]), max(f[(j*(j - <span class="number">1</span>)) / <span class="number">2</span> + i], f[(j*(j + <span class="number">1</span>)) / <span class="number">2</span> + i - <span class="number">1</span>])) + <span class="built_in">map</span>[i][l - i] + <span class="built_in">map</span>[j][l - j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; f[(m*(m + <span class="number">1</span>)) / <span class="number">2</span> + m - <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -249,7 +249,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%99%AE%E5%8F%8A/" rel="tag"># 普及-</a>
+              <a href="/tags/%E6%99%AE%E5%8F%8A-%E6%8F%90%E9%AB%98/" rel="tag"># 普及+/提高</a>
           </div>
 
         
@@ -258,12 +258,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/08/14/P1001/" rel="prev" title="P1001（A+B Problem）">
-      <i class="fa fa-chevron-left"></i> P1001（A+B Problem）
+    <a href="/2020/08/14/P1005/" rel="prev" title="P1005（矩阵取数游戏）">
+      <i class="fa fa-chevron-left"></i> P1005（矩阵取数游戏）
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/08/14/P1003/" rel="next" title="P1003（铺地毯）">
-      P1003（铺地毯） <i class="fa fa-chevron-right"></i>
+    <a href="/2020/08/14/P1007/" rel="next" title="P1007（独木桥）">
+      P1007（独木桥） <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
