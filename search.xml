@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CF1A Theatre Square</title>
+    <title>CF1A(Theatre Square)</title>
     <url>/2020/08/14/CF1A/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Theatre Square in the capital city of Berland has a rectangular shape with the size $n\times m$ meters. On the occasion of the city’s anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size $a\times a$ .</p>
 <p>What is the least number of flagstones needed to pave the Square? It’s allowed to cover the surface larger than the Theatre Square, but the Square has to be covered. It’s not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.<br><a id="more"></a></p>
