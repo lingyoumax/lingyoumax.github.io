@@ -28,7 +28,7 @@
 <meta property="og:description" content="题目描述有N堆纸牌，编号分别为 1,2,…,N。每堆上有若干张，但纸牌总数必为N的倍数。可以在任一堆上取若干张纸牌，然后移动。     移牌规则为：在编号为1堆上取的纸牌，只能移到编号为2的堆上；在编号为N的堆上取的纸牌，只能移到编号为N−1的堆上；其他堆上取的纸牌，可以移到相邻左边或右边的堆上。    现在要求找出一种移动方法，用最少的移动次数使每堆上纸牌数都一样多。 例如N&#x3D;4，4堆纸牌数分别">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-14T10:43:56.000Z">
-<meta property="article:modified_time" content="2020-08-14T11:00:42.782Z">
+<meta property="article:modified_time" content="2020-08-14T11:06:19.888Z">
 <meta property="article:author" content="lingyoumax">
 <meta property="article:tag" content="普及-">
 <meta name="twitter:card" content="summary">
@@ -213,7 +213,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-14 18:43:56 / 修改时间：19:00:42" itemprop="dateCreated datePublished" datetime="2020-08-14T18:43:56+08:00">2020-08-14</time>
+              <time title="创建时间：2020-08-14 18:43:56 / 修改时间：19:06:19" itemprop="dateCreated datePublished" datetime="2020-08-14T18:43:56+08:00">2020-08-14</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -247,6 +247,7 @@
 <p>第二行为：$A_1,A_2, … ,A_n $（N堆纸牌，每堆纸牌初始数，$ 1 \le A_i \le 10000 $）</p>
 <h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>一行：即所有堆均达到相等时的最少移动次数。</p>
 <h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>假设所有堆上的牌有s张，那么每个堆应该分配$ \frac{s}{n} $张牌，我们可以从第一堆牌出发，先让第一堆牌上的牌数减去$ \frac{s}{n} $，如果等于0，就说明第一堆牌不需要别的牌堆给牌，同时，他也给不了别的牌堆牌，如果小于0呢，就说明它上面的牌数是少于$ \frac{s}{n} $的，那么需要2号牌堆给他牌，如果大于0，就需要给予2号牌堆多出来的牌，无论是小于0还是大于0，都需要移动一次，所以移动次数需要加一。这时候，1号牌堆已经处理完毕，同样的方法去处理2号牌堆，注意，前面我们已经处理好了1号牌堆，1号牌堆是不能给予或接受牌的了，如果2号牌堆上的牌数不等于$ \frac{s}{n} $，那也只能被3号牌堆给予牌或给予牌给3号牌堆，且移动次数要加一，一直处理到n-1号牌堆，为什么是n-1而不是n呢，因为题目中说了s是n的倍数，所以如果前面n-1堆牌都调整到了$ \frac{s}{n} $，那么第n堆牌上的牌数一定也是$ \frac{s}{n} $。</p>
+<p>Talking is cheap,show you my code.</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">int</span> arr[<span class="number">101</span>];</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; arr[i];</span><br><span class="line">        sum += arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    sum /= n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        arr[i] -= sum;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] != <span class="number">0</span>) &#123;</span><br><span class="line">            ans++;</span><br><span class="line">            arr[i + <span class="number">1</span>] += arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
@@ -288,7 +289,10 @@
     <a href="/2020/08/14/P1084/" rel="prev" title="P1084（疫情控制）">
       <i class="fa fa-chevron-left"></i> P1084（疫情控制）
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/14/CF1A/" rel="next" title="CF1A Theatre Square">
+      CF1A Theatre Square <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -363,14 +367,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
