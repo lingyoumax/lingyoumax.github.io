@@ -311,6 +311,18 @@
       </tags>
   </entry>
   <entry>
+    <title>P1014（Cantor表）</title>
+    <url>/2020/08/14/P1014/</url>
+    <content><![CDATA[<p>这题是个入门题，只要看清楚题，都不会有问题的，什么？你问我为啥要写这篇博客？读书人水博客能叫水博客吗？说罢，气氛便欢乐了起来。<br><a id="more"></a><br>Talking is cheap,show you my code.<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> N;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> n = <span class="built_in">ceil</span>(<span class="built_in">sqrt</span>(<span class="number">2</span> * N + <span class="number">0.25</span>) - <span class="number">0.5</span>);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> t = N - (n*(n - <span class="number">1</span>)) / <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; (n + <span class="number">1</span> - t) &lt;&lt; <span class="string">&quot;/&quot;</span> &lt;&lt; t &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>洛谷</category>
+      </categories>
+      <tags>
+        <tag>入门</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>P1015（回文数）</title>
     <url>/2020/08/14/P1015/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>若一个数（首位不为零）从左向右读与从右向左读都一样，我们就将其称之为回文数。<br>例如：给定一个十进制数 56，将 56 加 65（即把 5656 从右向左读），得到 121 是一个回文数。  </p>
@@ -327,18 +339,6 @@
       </categories>
       <tags>
         <tag>普及-</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P1014（Cantor表）</title>
-    <url>/2020/08/14/P1014/</url>
-    <content><![CDATA[<p>这题是个入门题，只要看清楚题，都不会有问题的，什么？你问我为啥要写这篇博客？读书人水博客能叫水博客吗？说罢，气氛便欢乐了起来。<br><a id="more"></a><br>Talking is cheap,show you my code.<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> N;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; N;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> n = <span class="built_in">ceil</span>(<span class="built_in">sqrt</span>(<span class="number">2</span> * N + <span class="number">0.25</span>) - <span class="number">0.5</span>);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> t = N - (n*(n - <span class="number">1</span>)) / <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; (n + <span class="number">1</span> - t) &lt;&lt; <span class="string">&quot;/&quot;</span> &lt;&lt; t &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      <categories>
-        <category>洛谷</category>
-      </categories>
-      <tags>
-        <tag>入门</tag>
       </tags>
   </entry>
   <entry>
