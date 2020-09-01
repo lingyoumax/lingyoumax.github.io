@@ -182,6 +182,19 @@
       </tags>
   </entry>
   <entry>
+    <title>P1001（A+B Problem）</title>
+    <url>/2020/08/14/P1001/</url>
+    <content><![CDATA[<p>这一题是A+B题，作为一个入门选手，肯定都会，简简单单的<code>Cout&lt;&lt;a+b</code>之后，手贱点开了题解，然后颤颤巍巍地关闭网页。   </p>
+<p>唉，洛谷的大佬们太不友好了，给我来了一个下马威，不过这让我认识到了自己的渺小，人外有人，山外有山，晚辈自当奋发图强，超越就是最好的致敬。</p>
+]]></content>
+      <categories>
+        <category>洛谷</category>
+      </categories>
+      <tags>
+        <tag>入门</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>P1002（过河卒）</title>
     <url>/2020/08/14/P1002/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>棋盘上 A 点有一个过河卒，需要走到目标 B 点。卒行走的规则：可以向下、或者向右。同时在棋盘上 C 点有一个对方的马，该马所在的点和所有跳跃一步可达的点称为对方马的控制点。因此称之为“马拦过河卒”。   </p>
@@ -750,6 +763,24 @@
       </tags>
   </entry>
   <entry>
+    <title>P1030（求先序排列）</title>
+    <url>/2020/08/14/P1030/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给出一棵二叉树的中序与后序排列。求出它的先序排列。（约定树结点用不同的大写字母表示，长度$\le 8$）。<br><a id="more"></a></p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>2行，均为大写字母组成的字符串，表示一棵二叉树的中序与后序排列。</p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>1行，表示一棵二叉树的先序。</p>
+<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>这是一道二叉树的题目，当时老师是布置过这个题目的，但是我当时是用递归做的，但是我当时年轻，老师问了一句如果数据量10000000个，你又怎么处理呢，我当时提出了一个解法，好像和二叉排序树相关，转眼半年过去了，原解法已经忘了，现在想的这个解法也许是新解法？     </p>
+<p>我们可以每次对中序序列的$l_1 \sim r_1$的范围和后序序列的$l_2 \sim r_2$的范围内搜索，在中序序列中找到后序序列中$r_2$位置上的节点，假设它在中序序列中对应下标为p,中序序列裂变成$l_1\sim (p-1)$和$(p+1) \sim r_1$两部分，后序遍历裂变成$l_2\sim (l_2+p-1-l_1)$和$(l_2+p-l_1)\sim (r2-1)$两部分，然后继续向下分裂，直到不能分裂为止，注意，每次分裂时，都要把p位置上节点的值输出一次，因为后序序列的最后一个节点就是先序序列的第一个节点。这题数据量特别小，递归应该能过，但是我害怕10000000的数据量，所以我选择非递归做法，并且用数组模拟了栈。    </p>
+<p>Talking is cheap,show you my code.</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">string</span> str1, str2;<span class="comment">//str1:中序,str2：后序</span></span><br><span class="line"><span class="keyword">int</span> node[<span class="number">10</span>][<span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; str1 &gt;&gt; str2;</span><br><span class="line">    <span class="keyword">int</span> s = str1.size();</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">    node[num][<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    node[num][<span class="number">1</span>] = --s;</span><br><span class="line">    node[num][<span class="number">2</span>] = <span class="number">0</span>;</span><br><span class="line">    node[num++][<span class="number">3</span>] = s;</span><br><span class="line">    <span class="keyword">while</span> (num) &#123;</span><br><span class="line">        <span class="keyword">int</span> l1 = node[--num][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> r1 = node[num][<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">int</span> l2 = node[num][<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">int</span> r2 = node[num][<span class="number">3</span>];</span><br><span class="line">        <span class="keyword">int</span> begin = l1;</span><br><span class="line">        <span class="keyword">while</span> (str1[begin] != str2[r2]) &#123;</span><br><span class="line">            begin++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; str2[r2];</span><br><span class="line">        <span class="keyword">if</span> (r1 &gt; begin) &#123;</span><br><span class="line">            node[num][<span class="number">0</span>] = begin + <span class="number">1</span>;</span><br><span class="line">            node[num][<span class="number">1</span>] = r1;</span><br><span class="line">            node[num][<span class="number">2</span>] = l2 + begin - l1;</span><br><span class="line">            node[num++][<span class="number">3</span>] = --r2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (begin &gt; l1) &#123;</span><br><span class="line">            node[num][<span class="number">0</span>] = l1;</span><br><span class="line">            node[num][<span class="number">1</span>] = begin - <span class="number">1</span>;</span><br><span class="line">            node[num][<span class="number">2</span>] = l2;</span><br><span class="line">            node[num++][<span class="number">3</span>] = l2 + begin - <span class="number">1</span> - l1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>洛谷</category>
+      </categories>
+      <tags>
+        <tag>普及-</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>P1031（均分纸牌）</title>
     <url>/2020/08/14/P1031/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>有N堆纸牌，编号分别为 1,2,…,N。每堆上有若干张，但纸牌总数必为N的倍数。可以在任一堆上取若干张纸牌，然后移动。    </p>
@@ -765,24 +796,6 @@
 <h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>假设所有堆上的牌有s张，那么每个堆应该分配$ \frac{s}{n} $张牌，我们可以从第一堆牌出发，先让第一堆牌上的牌数减去$ \frac{s}{n} $，如果等于0，就说明第一堆牌不需要别的牌堆给牌，同时，他也给不了别的牌堆牌，如果小于0呢，就说明它上面的牌数是少于$ \frac{s}{n} $的，那么需要2号牌堆给他牌，如果大于0，就需要给予2号牌堆多出来的牌，无论是小于0还是大于0，都需要移动一次，所以移动次数需要加一。这时候，1号牌堆已经处理完毕，同样的方法去处理2号牌堆，注意，前面我们已经处理好了1号牌堆，1号牌堆是不能给予或接受牌的了，如果2号牌堆上的牌数不等于$ \frac{s}{n} $，那也只能被3号牌堆给予牌或给予牌给3号牌堆，且移动次数要加一，一直处理到n-1号牌堆，为什么是n-1而不是n呢，因为题目中说了s是n的倍数，所以如果前面n-1堆牌都调整到了$ \frac{s}{n} $，那么第n堆牌上的牌数一定也是$ \frac{s}{n} $。</p>
 <p>Talking is cheap,show you my code.</p>
 <h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">int</span> arr[<span class="number">101</span>];</span><br><span class="line">    <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; arr[i];</span><br><span class="line">        sum += arr[i];</span><br><span class="line">    &#125;</span><br><span class="line">    sum /= n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        arr[i] -= sum;</span><br><span class="line">        <span class="keyword">if</span> (arr[i] != <span class="number">0</span>) &#123;</span><br><span class="line">            ans++;</span><br><span class="line">            arr[i + <span class="number">1</span>] += arr[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>洛谷</category>
-      </categories>
-      <tags>
-        <tag>普及-</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P1030（求先序排列）</title>
-    <url>/2020/08/14/P1030/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给出一棵二叉树的中序与后序排列。求出它的先序排列。（约定树结点用不同的大写字母表示，长度$\le 8$）。<br><a id="more"></a></p>
-<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>2行，均为大写字母组成的字符串，表示一棵二叉树的中序与后序排列。</p>
-<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>1行，表示一棵二叉树的先序。</p>
-<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>这是一道二叉树的题目，当时老师是布置过这个题目的，但是我当时是用递归做的，但是我当时年轻，老师问了一句如果数据量10000000个，你又怎么处理呢，我当时提出了一个解法，好像和二叉排序树相关，转眼半年过去了，原解法已经忘了，现在想的这个解法也许是新解法？     </p>
-<p>我们可以每次对中序序列的$l_1 \sim r_1$的范围和后序序列的$l_2 \sim r_2$的范围内搜索，在中序序列中找到后序序列中$r_2$位置上的节点，假设它在中序序列中对应下标为p,中序序列裂变成$l_1\sim (p-1)$和$(p+1) \sim r_1$两部分，后序遍历裂变成$l_2\sim (l_2+p-1-l_1)$和$(l_2+p-l_1)\sim (r2-1)$两部分，然后继续向下分裂，直到不能分裂为止，注意，每次分裂时，都要把p位置上节点的值输出一次，因为后序序列的最后一个节点就是先序序列的第一个节点。这题数据量特别小，递归应该能过，但是我害怕10000000的数据量，所以我选择非递归做法，并且用数组模拟了栈。    </p>
-<p>Talking is cheap,show you my code.</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">string</span> str1, str2;<span class="comment">//str1:中序,str2：后序</span></span><br><span class="line"><span class="keyword">int</span> node[<span class="number">10</span>][<span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; str1 &gt;&gt; str2;</span><br><span class="line">    <span class="keyword">int</span> s = str1.size();</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">    node[num][<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    node[num][<span class="number">1</span>] = --s;</span><br><span class="line">    node[num][<span class="number">2</span>] = <span class="number">0</span>;</span><br><span class="line">    node[num++][<span class="number">3</span>] = s;</span><br><span class="line">    <span class="keyword">while</span> (num) &#123;</span><br><span class="line">        <span class="keyword">int</span> l1 = node[--num][<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> r1 = node[num][<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">int</span> l2 = node[num][<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">int</span> r2 = node[num][<span class="number">3</span>];</span><br><span class="line">        <span class="keyword">int</span> begin = l1;</span><br><span class="line">        <span class="keyword">while</span> (str1[begin] != str2[r2]) &#123;</span><br><span class="line">            begin++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; str2[r2];</span><br><span class="line">        <span class="keyword">if</span> (r1 &gt; begin) &#123;</span><br><span class="line">            node[num][<span class="number">0</span>] = begin + <span class="number">1</span>;</span><br><span class="line">            node[num][<span class="number">1</span>] = r1;</span><br><span class="line">            node[num][<span class="number">2</span>] = l2 + begin - l1;</span><br><span class="line">            node[num++][<span class="number">3</span>] = --r2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (begin &gt; l1) &#123;</span><br><span class="line">            node[num][<span class="number">0</span>] = l1;</span><br><span class="line">            node[num][<span class="number">1</span>] = begin - <span class="number">1</span>;</span><br><span class="line">            node[num][<span class="number">2</span>] = l2;</span><br><span class="line">            node[num++][<span class="number">3</span>] = l2 + begin - <span class="number">1</span> - l1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
       <categories>
         <category>洛谷</category>
       </categories>
@@ -818,19 +831,6 @@
       </categories>
       <tags>
         <tag>省选/NOI-</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P1001（A+B Problem）</title>
-    <url>/2020/08/14/P1001/</url>
-    <content><![CDATA[<p>这一题是A+B题，作为一个入门选手，肯定都会，简简单单的<code>Cout&lt;&lt;a+b</code>之后，手贱点开了题解，然后颤颤巍巍地关闭网页。   </p>
-<p>唉，洛谷的大佬们太不友好了，给我来了一个下马威，不过这让我认识到了自己的渺小，人外有人，山外有山，晚辈自当奋发图强，超越就是最好的致敬。</p>
-]]></content>
-      <categories>
-        <category>洛谷</category>
-      </categories>
-      <tags>
-        <tag>入门</tag>
       </tags>
   </entry>
 </search>
