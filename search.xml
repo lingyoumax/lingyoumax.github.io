@@ -240,6 +240,23 @@
       </tags>
   </entry>
   <entry>
+    <title>CF4B(Before an Exam)</title>
+    <url>/2020/09/02/CF4B/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Tomorrow Peter has a Biology exam. He does not like this subject much, but dd days ago he learnt that he would have to take this exam. Peter’s strict parents made him prepare for the exam immediately, for this purpose he has to study not less than $minTime_{i} $and not more than $maxTime_{i}$  hours per each $i$ -th day. Moreover, they warned Peter that a day before the exam they would check how he has followed their instructions.</p>
+<p>So, today is the day when Peter’s parents ask him to show the timetable of his preparatory studies. But the boy has counted only the sum of hours $sumTime$ spent him on preparation, and now he wants to know if he can show his parents a timetable sсhedule with $d$ numbers, where each number $sсhedule_{i}$  stands for the time in hours spent by Peter each $i$ -th day on biology studies, and satisfying the limitations imposed by his parents, and at the same time the sum total of all $schedule_{i}$  should equal to sumTime .<br><a id="more"></a></p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first input line contains two integer numbers $d,sumTime (1&lt;=d&lt;=30,0&lt;=sumTime&lt;=240)$ — the amount of days, during which Peter studied, and the total amount of hours, spent on preparation. Each of the following $d$ lines contains two integer numbers $minTime_{i},maxTime_{i}( 0\le minTime_{i}\le maxTime_{i}\le 8)$, separated by a space — minimum and maximum amount of hours that Peter could spent in the $i$ -th day.</p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>In the first line print YES, and in the second line print $d$ numbers (separated by a space), each of the numbers — amount of hours, spent by Peter on preparation in the corresponding day, if he followed his parents’ instructions; or print NO in the unique line. If there are many solutions, print any of them.</p>
+<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>先统计d天的$mintime$和$maxtime$，如果$mintime\le sumtime\le maxtime$，就输出YES，否则输出NO。</p>
+<p>如果是YES，我们先$d$天内学习时间全部初始化为当天的$mintime$，如果达不到$sumtime$,就把当天学习时间弄满，然后看达到没有，如此反复。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> t[<span class="number">30</span>][<span class="number">2</span>], d, s, mi, ma;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; d &gt;&gt; s;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; d;i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; t[i][<span class="number">0</span>] &gt;&gt; t[i][<span class="number">1</span>];</span><br><span class="line">        mi += t[i][<span class="number">0</span>];</span><br><span class="line">        ma += t[i][<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> ((mi &gt; s) || (ma &lt; s)) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;NO&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;YES&quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        s -= mi;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; d;i++) &#123;</span><br><span class="line">            s -= t[i][<span class="number">1</span>] - t[i][<span class="number">0</span>];</span><br><span class="line">            t[i][<span class="number">0</span>] = t[i][<span class="number">1</span>];</span><br><span class="line">            <span class="keyword">if</span> (s &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">                t[i][<span class="number">0</span>] += s;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; d;i++) &#123;</span><br><span class="line">            <span class="built_in">cout</span> &lt;&lt; t[i][<span class="number">0</span>] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>CodeForces</category>
+      </categories>
+      <tags>
+        <tag>普及-</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>P1000（超级玛丽游戏）</title>
     <url>/2020/08/13/P1000/</url>
     <content><![CDATA[<p>才发现洛谷有P1000这题，“万事开头难”，彩蛋之题啊<br><a id="more"></a></p>
@@ -466,24 +483,6 @@
       </tags>
   </entry>
   <entry>
-    <title>P1012（拼数）</title>
-    <url>/2020/08/14/P1012/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>设有 n 个正整数 $a_1 \dots a_n$，将它们联接成一排，相邻数字首尾相接，组成一个最大的整数。<br><a id="more"></a></p>
-<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>第一行有一个整数，表示数字个数 n。</p>
-<p>第二行有 n 个整数，表示给出的 n 个整数 $a_i$ 。</p>
-<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>一个正整数，表示最大的整数</p>
-<h1 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h1><p>对于全部的测试点，保证 $1 \leq n \leq 20，1 \leq a_i \leq 10^9 $。</p>
-<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>对于这一题，我刚开始还是想老老实实用int或long做的，但是看了一位大佬的做法，用string做，就很自然的解决了数字连接的问题，所以果断string。   </p>
-<p>Talking is cheap,show you my code.</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s[<span class="number">20</span>];</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; s[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; (n - i<span class="number">-1</span>);j++) &#123;</span><br><span class="line">            <span class="built_in">string</span> s1 = s[j] + s[j + <span class="number">1</span>];</span><br><span class="line">            <span class="built_in">string</span> s2 = s[j + <span class="number">1</span>] + s[j];</span><br><span class="line">            <span class="keyword">if</span> (s1 &lt; s2) &#123;</span><br><span class="line">                <span class="built_in">string</span> t = s[j];</span><br><span class="line">                s[j] = s[j+<span class="number">1</span>];</span><br><span class="line">                s[j+<span class="number">1</span>] = t;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; s[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>洛谷</category>
-      </categories>
-      <tags>
-        <tag>普及-</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>P1013（进制位）</title>
     <url>/2020/08/14/P1013/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>著名科学家卢斯为了检查学生对进位制的理解，他给出了如下的一张加法表，表中的字母代表数字。 例如：</p>
@@ -512,6 +511,24 @@
       </categories>
       <tags>
         <tag>提高+/省选-</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P1012（拼数）</title>
+    <url>/2020/08/14/P1012/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>设有 n 个正整数 $a_1 \dots a_n$，将它们联接成一排，相邻数字首尾相接，组成一个最大的整数。<br><a id="more"></a></p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>第一行有一个整数，表示数字个数 n。</p>
+<p>第二行有 n 个整数，表示给出的 n 个整数 $a_i$ 。</p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>一个正整数，表示最大的整数</p>
+<h1 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h1><p>对于全部的测试点，保证 $1 \leq n \leq 20，1 \leq a_i \leq 10^9 $。</p>
+<h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>对于这一题，我刚开始还是想老老实实用int或long做的，但是看了一位大佬的做法，用string做，就很自然的解决了数字连接的问题，所以果断string。   </p>
+<p>Talking is cheap,show you my code.</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">string</span> s[<span class="number">20</span>];</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; s[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; (n - i<span class="number">-1</span>);j++) &#123;</span><br><span class="line">            <span class="built_in">string</span> s1 = s[j] + s[j + <span class="number">1</span>];</span><br><span class="line">            <span class="built_in">string</span> s2 = s[j + <span class="number">1</span>] + s[j];</span><br><span class="line">            <span class="keyword">if</span> (s1 &lt; s2) &#123;</span><br><span class="line">                <span class="built_in">string</span> t = s[j];</span><br><span class="line">                s[j] = s[j+<span class="number">1</span>];</span><br><span class="line">                s[j+<span class="number">1</span>] = t;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; n;i++) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; s[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>洛谷</category>
+      </categories>
+      <tags>
+        <tag>普及-</tag>
       </tags>
   </entry>
   <entry>
