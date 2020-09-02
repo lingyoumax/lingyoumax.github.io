@@ -28,7 +28,7 @@
 <meta property="og:description" content="题目描述Tomorrow Peter has a Biology exam. He does not like this subject much, but dd days ago he learnt that he would have to take this exam. Peter’s strict parents made him prepare for the exam immediat">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-02T02:15:53.000Z">
-<meta property="article:modified_time" content="2020-09-02T02:33:28.763Z">
+<meta property="article:modified_time" content="2020-09-02T02:38:56.900Z">
 <meta property="article:author" content="lingyoumax">
 <meta property="article:tag" content="普及-">
 <meta name="twitter:card" content="summary">
@@ -220,7 +220,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-02 10:15:53 / 修改时间：10:33:28" itemprop="dateCreated datePublished" datetime="2020-09-02T10:15:53+08:00">2020-09-02</time>
+              <time title="创建时间：2020-09-02 10:15:53 / 修改时间：10:38:56" itemprop="dateCreated datePublished" datetime="2020-09-02T10:15:53+08:00">2020-09-02</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -259,7 +259,7 @@
       
         <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Tomorrow Peter has a Biology exam. He does not like this subject much, but dd days ago he learnt that he would have to take this exam. Peter’s strict parents made him prepare for the exam immediately, for this purpose he has to study not less than $minTime_{i} $and not more than $maxTime_{i}$  hours per each $i$ -th day. Moreover, they warned Peter that a day before the exam they would check how he has followed their instructions.</p>
 <p>So, today is the day when Peter’s parents ask him to show the timetable of his preparatory studies. But the boy has counted only the sum of hours $sumTime$ spent him on preparation, and now he wants to know if he can show his parents a timetable sсhedule with $d$ numbers, where each number $sсhedule_{i}$  stands for the time in hours spent by Peter each $i$ -th day on biology studies, and satisfying the limitations imposed by his parents, and at the same time the sum total of all $schedule_{i}$  should equal to sumTime .<br><a id="more"></a></p>
-<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first input line contains two integer numbers $d,sumTime (1&lt;=d&lt;=30,0&lt;=sumTime&lt;=240)$ — the amount of days, during which Peter studied, and the total amount of hours, spent on preparation. Each of the following $d$ lines contains two integer numbers $minTime_{i},maxTime_{i}( 0\le minTime_{i}\le maxTime_{i}\le 8)$, separated by a space — minimum and maximum amount of hours that Peter could spent in the $i$ -th day.</p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first input line contains two integer numbers $d,sumTime(1&lt;=d&lt;=30,0&lt;=sumTime&lt;=240)$ — the amount of days, during which Peter studied, and the total amount of hours, spent on preparation. Each of the following $d$ lines contains two integer numbers $minTime_{i},maxTime_{i}( 0\le minTime_{i}\le maxTime_{i}\le 8)$, separated by a space — minimum and maximum amount of hours that Peter could spent in the $i$ -th day.</p>
 <h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>In the first line print YES, and in the second line print $d$ numbers (separated by a space), each of the numbers — amount of hours, spent by Peter on preparation in the corresponding day, if he followed his parents’ instructions; or print NO in the unique line. If there are many solutions, print any of them.</p>
 <h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>先统计d天的$mintime$和$maxtime$，如果$mintime\le sumtime\le maxtime$，就输出YES，否则输出NO。</p>
 <p>如果是YES，我们先$d$天内学习时间全部初始化为当天的$mintime$，如果达不到$sumtime$,就把当天学习时间弄满，然后看达到没有，如此反复。</p>
