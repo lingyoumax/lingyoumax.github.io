@@ -28,7 +28,7 @@
 <meta property="og:description" content="题目描述Peter decided to wish happy birthday to his friend from Australia and send him a card. To make his present more mysterious, he decided to make a chain. Chain here is such a sequence of envelopes $">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-05T16:35:07.000Z">
-<meta property="article:modified_time" content="2020-09-05T17:14:31.894Z">
+<meta property="article:modified_time" content="2020-09-05T17:18:50.792Z">
 <meta property="article:author" content="lingyoumax">
 <meta property="article:tag" content="提高+&#x2F;省选-">
 <meta name="twitter:card" content="summary">
@@ -220,7 +220,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-06 00:35:07 / 修改时间：01:14:31" itemprop="dateCreated datePublished" datetime="2020-09-06T00:35:07+08:00">2020-09-06</time>
+              <time title="创建时间：2020-09-06 00:35:07 / 修改时间：01:18:50" itemprop="dateCreated datePublished" datetime="2020-09-06T00:35:07+08:00">2020-09-06</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -260,7 +260,7 @@
         <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>Peter decided to wish happy birthday to his friend from Australia and send him a card. To make his present more mysterious, he decided to make a chain. Chain here is such a sequence of envelopes $A = { a_{1},a_{2},…,a_{n}}$, where the width and the height of the $i$ -th envelope is strictly higher than the width and the height of the $(i-1)$ -th envelope respectively. Chain size is the number of envelopes in the chain.</p>
 <p>Peter wants to make the chain of the maximum size from the envelopes he has, the chain should be such, that he’ll be able to put a card into it. The card fits into the chain if its width and height is lower than the width and the height of the smallest envelope in the chain respectively. It’s forbidden to turn the card and the envelopes.</p>
 <p>Peter has very many envelopes and very little time, this hard task is entrusted to you.<br><a id="more"></a></p>
-<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line contains integers $n ,w  , h ( 1\le n\le 5000 , 1\le w,h\le 10^{6}) $— amount of envelopes Peter has, the card width and height respectively. Then there follow $n$ lines, each of them contains two integer numbers $w_{i}$and $h_{i}$  — width and height of the $i$ -th envelope $( 1\le w_{i},h_{i}\le 10^{6})$.</p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line contains integers $n ,w  , h ( 1\le n\le 5000 , 1\le w,h\le 10^{6}) $— amount of envelopes Peter has, the card width and height respectively. Then there follow $n$ lines, each of them contains two integer numbers $w_{i}$ and $h_{i}$  — width and height of the $i$ -th envelope $( 1\le w_{i},h_{i}\le 10^{6})$.</p>
 <h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>In the first line print the maximum chain size. In the second line print the numbers of the envelopes (separated by space), forming the required chain, starting with the number of the smallest envelope. Remember, please, that the card should fit into the smallest envelope. If the chain of maximum size is not unique, print any of the answers.</p>
 <p>If the card does not fit into any of the envelopes, print number 0 in the single line.</p>
 <h1 id="解题感悟"><a href="#解题感悟" class="headerlink" title="解题感悟"></a>解题感悟</h1><p>这题有些小细节好能卡人啊，它要求是严格单调递增的，就意味着序列中相邻物品无论是长还是宽都不能相等，然后是一个二维下的比较，难度up up。</p>
