@@ -1258,7 +1258,8 @@
   <entry>
     <title>Dreamwevear网页设计</title>
     <url>/2022/03/17/Dreamwevear%E7%BD%91%E9%A1%B5%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<h1 id="主要介绍"><a href="#主要介绍" class="headerlink" title="主要介绍"></a>主要介绍</h1><p>这门课程是我在大学开始时选的课程，如成绩单所示，这一门课的性质是任选。我记得我刚开始学习这门课程是为了设计一个自己的网页，在课程上，老师带领我们学习了有关Dreamwevaer的许多内容。</p>
+    <content><![CDATA[<span id="more"></span>
+<h1 id="主要介绍"><a href="#主要介绍" class="headerlink" title="主要介绍"></a>主要介绍</h1><p>这门课程是我在大学开始时选的课程，如成绩单所示，这一门课的性质是任选。我记得我刚开始学习这门课程是为了设计一个自己的网页，在课程上，老师带领我们学习了有关Dreamwevaer的许多内容。</p>
 <h1 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h1><ul>
 <li>用标签代表一部分内容的开始，用带有斜杠的相同标签代表着该部分内容的结束</li>
 <li>没有缩进，不像python那样能自动识别代码的结束</li>
