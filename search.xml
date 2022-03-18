@@ -1309,7 +1309,7 @@
 <li>特殊集合：空集</li>
 <li>运算：并集、交集、差集</li>
 <li>笛卡尔乘积：${(x,y)|x\in A,y \in B}$为A与B的直积，记为$A\times B$</li>
-<li>点a的领域：$O(a,)$<h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1></li>
+<li>点a的领域：$O(a,\delta)={x| |x-a|&lt;\delta}=(a-\delta,a+\delta)$<h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1></li>
 </ul>
 <h1 id="中值定理与导数的应用"><a href="#中值定理与导数的应用" class="headerlink" title="中值定理与导数的应用"></a>中值定理与导数的应用</h1><h1 id="一元函数的不定积分"><a href="#一元函数的不定积分" class="headerlink" title="一元函数的不定积分"></a>一元函数的不定积分</h1><h1 id="一元函数定积分"><a href="#一元函数定积分" class="headerlink" title="一元函数定积分"></a>一元函数定积分</h1>]]></content>
       <tags>
