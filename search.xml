@@ -1291,7 +1291,7 @@
 <li>混合积(标量) $[abc]=|a\times b||c|cos&lt;a\times b,c&gt;$</li>
 <li>三个向量共面的充分必要条件是三个向量的混合积为0<h1 id="空间解析几何"><a href="#空间解析几何" class="headerlink" title="空间解析几何"></a>空间解析几何</h1></li>
 <li>平面的一般性方程$A(x-x_0)+B(y-y_0)+C(z-z_0)=0,Ax+By+Cz+D=0$</li>
-<li>利用混合积性质，有平面的三点式方程$\begin{vmatrix}x-x_1 &amp; y-y_1 &amp; z-z_1 \ x_2-x_1 &amp; y_2-y_1 &amp; z_2-z_1\x_3-x_1 &amp; y_3-y_1 &amp; z_3-z_1\end{vmatrix}$</li>
+<li>利用混合积性质，有平面的三点式方程$\begin{vmatrix}x-x_1 &amp; y-y_1 &amp; z-z_1 \ x_2-x_1 &amp; y_2-y_1 &amp; z_2-z_1\ x_3-x_1 &amp; y_3-y_1 &amp; z_3-z_1\end{vmatrix}$</li>
 <li>平面的截距式方程$\frac{x}{a}+\frac{y}{b}+\frac{z}{c}=1$</li>
 <li>直线的参数式方程 $\begin{cases} x=x_0+t\times l\ y=y_0+t\times m \ z=z_0+t\times n\end{cases} ,t \in R$</li>
 <li>直线的对称式方程(标准方程)$\frac{x-x_0}{l}=\frac{y-y_0}{m}=\frac{z-z_0}{n},l^2+m^2+n^2\neq 0$</li>
@@ -1309,7 +1309,12 @@
 <li>特殊集合：空集</li>
 <li>运算：并集、交集、差集</li>
 <li>笛卡尔乘积：${(x,y)|x\in A,y \in B}$为A与B的直积，记为$A\times B$</li>
-<li>点a的领域：$O(a,\delta)={x| |x-a|&lt;\delta}=(a-\delta,a+\delta)$<h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1></li>
+<li>点a的领域：$O(a,\delta)={x| |x-a|&lt;\delta}=(a-\delta,a+\delta)$</li>
+<li>点a的去心领域：$O_0(a,\delta)={x| 0&lt;|x-a|&lt;\delta}=(a-\delta,a+\delta)-{a}$</li>
+<li>点a的右领域：$O^+(a,\delta)={x| 0&lt;x-a&lt;\delta}=(a,a+\delta)$</li>
+<li>点a的左领域：$O^-(a,\delta)={x| -\delta&lt;x-a&lt;0}=(a-\delta,a)$</li>
+<li>上界：如果存在一个实数M，使得$\forall x\in A,x\leq M$，则称M为A的上界，最小的上界为上确界(supA)</li>
+<li>下界：如果存在一个实数M，使得$\forall x\in A,x\geq M$，则称M为A的下界，最大的下界为下确界(infA)<h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1></li>
 </ul>
 <h1 id="中值定理与导数的应用"><a href="#中值定理与导数的应用" class="headerlink" title="中值定理与导数的应用"></a>中值定理与导数的应用</h1><h1 id="一元函数的不定积分"><a href="#一元函数的不定积分" class="headerlink" title="一元函数的不定积分"></a>一元函数的不定积分</h1><h1 id="一元函数定积分"><a href="#一元函数定积分" class="headerlink" title="一元函数定积分"></a>一元函数定积分</h1>]]></content>
       <tags>
