@@ -221,7 +221,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-03-18 14:05:48" itemprop="dateModified" datetime="2022-03-18T14:05:48+08:00">2022-03-18</time>
+                <time title="修改时间：2022-03-18 18:22:17" itemprop="dateModified" datetime="2022-03-18T18:22:17+08:00">2022-03-18</time>
               </span>
 
           
@@ -285,9 +285,59 @@
 <li>点a的右领域：$O^+(a,\delta)={x| 0&lt;x-a&lt;\delta}=(a,a+\delta)$</li>
 <li>点a的左领域：$O^-(a,\delta)={x| -\delta&lt;x-a&lt;0}=(a-\delta,a)$</li>
 <li>上界：如果存在一个实数M，使得$\forall x\in A,x\leq M$，则称M为A的上界，最小的上界为上确界(supA)</li>
-<li>下界：如果存在一个实数M，使得$\forall x\in A,x\geq M$，则称M为A的下界，最大的下界为下确界(infA)<h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1></li>
+<li>下界：如果存在一个实数M，使得$\forall x\in A,x\geq M$，则称M为A的下界，最大的下界为下确界(infA)</li>
+<li>确界存在定理：非空有上界的实数集A必有上确界，非空有下界的实数解必有下确界<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2></li>
+<li>映射：单射、满射、双射</li>
+<li>周期性、有界性、奇偶性</li>
+<li>复合函数</li>
+<li>反函数</li>
+<li>基本初等函数：幂函数、指数函数、对数函数、三角函数、反三角函数<h2 id="数列"><a href="#数列" class="headerlink" title="数列"></a>数列</h2></li>
+<li>数列极限：收敛必有界，单调有界必收敛</li>
+<li>夹逼定理</li>
+<li>$lim_{x\to 0}\frac{sinx}{x}=1$</li>
+<li>$lim_{x\to \infty }(1+\frac{1}{x})^x=e$</li>
+<li>高阶无穷小：$\alpha(x)=o(\beta(x))$</li>
+<li>同阶无穷小:$\alpha(x)=O(\beta(x))$，当两者为等价无穷小时，$\alpha(x)~\beta(x)$</li>
+<li>k阶无穷小：$lim_{x\to \alpha}\frac{\alpha{x}}{\beta^k(x)}$</li>
+<li>连续</li>
+<li>第一类间断点：可去间断点、跳跃间断点</li>
+<li>第二类间断点</li>
+<li>有界性定理：若$f(x)\in C[a,b]$,则f(x)在[a.b]上必有界</li>
+<li>最大值和最小值定理：若$f(x)\in C[a,b]$,则f(x)在[a.b]上必有最大值和最小值</li>
+<li>零点定理：若$f(x)\in C[a,b]$，且f(a)·f(b)&lt;0，则f(x)在开区间(a,b)内必有一零点。<h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1></li>
+<li>若f(x)在$x_0$处可导，则f(x)在$x_0$处连续<h1 id="中值定理与导数的应用"><a href="#中值定理与导数的应用" class="headerlink" title="中值定理与导数的应用"></a>中值定理与导数的应用</h1><h2 id="Fermat定理"><a href="#Fermat定理" class="headerlink" title="Fermat定理"></a>Fermat定理</h2>设函数f(x)在点$x_0$的某个领域内有定义，若点$x_0$处可导，且在$x_0$处取得极大值或极小值，则必有$f(x_0)’=0$<h2 id="Rolle中值定理"><a href="#Rolle中值定理" class="headerlink" title="Rolle中值定理"></a>Rolle中值定理</h2>若函数f(x)满足以下三条要求：</li>
+<li>在闭区间[a,b]上连续</li>
+<li>在开区间(a,b)上可导</li>
+<li>f(a)=f(b)</li>
 </ul>
-<h1 id="中值定理与导数的应用"><a href="#中值定理与导数的应用" class="headerlink" title="中值定理与导数的应用"></a>中值定理与导数的应用</h1><h1 id="一元函数的不定积分"><a href="#一元函数的不定积分" class="headerlink" title="一元函数的不定积分"></a>一元函数的不定积分</h1><h1 id="一元函数定积分"><a href="#一元函数定积分" class="headerlink" title="一元函数定积分"></a>一元函数定积分</h1>
+<p>则在开区间(a,b)内至少存在一点$x_0$,则$f(x_0)’=0$</p>
+<h2 id="Lagrange中值定理"><a href="#Lagrange中值定理" class="headerlink" title="Lagrange中值定理"></a>Lagrange中值定理</h2><p>若f(x)满足以下两条要求：</p>
+<ul>
+<li>在闭区间[a,b]上连续</li>
+<li>在开区间(a,b)上可导</li>
+</ul>
+<p>则在开区间(a,b)上至少存在一点$x_0$满足$f(x_0)’=\frac{f(b)-f(a)}{b-a}$</p>
+<h2 id="Cauchy中值定理"><a href="#Cauchy中值定理" class="headerlink" title="Cauchy中值定理"></a>Cauchy中值定理</h2><p>若函数f(x),g(x)满足</p>
+<ul>
+<li>f(x),g(x)在闭区间[a,b]内连续</li>
+<li>f(x),g(x)在开区间(a,b)内可导</li>
+</ul>
+<p>则在开区间(a,b)内至少存在一点$x_0$，满足$\frac{f(x_0)’}{g(x_0)’}=\frac{f(b)-f(a)}{g(b)-g(a)}$</p>
+<h2 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h2><p>$f(x)=\sum_{i=0}^{\infty}f(x_0)^{(i)}(x-x_0)^{i}$</p>
+<h2 id="函数单调性"><a href="#函数单调性" class="headerlink" title="函数单调性"></a>函数单调性</h2><p>设函数f(x)在区间[a,b]上连续，在(a,b)内可导，则函数f(x)在区间[a,b]上严格单调增加(或减少)的充要条件是$f’(x)\geq 0(f’(x)\leq 0),x\in (a,b)$,而且在(a,b)内的任何子区间上f’(x)不恒为零</p>
+<h2 id="函数极值的判定"><a href="#函数极值的判定" class="headerlink" title="函数极值的判定"></a>函数极值的判定</h2><h3 id="极值的第一充分条件"><a href="#极值的第一充分条件" class="headerlink" title="极值的第一充分条件"></a>极值的第一充分条件</h3><p>若函数f(x)在$x_0$的某个领域内连续，则有：</p>
+<ul>
+<li>若在 $ x&lt;x_0 $时，有$f’(x)&gt;0$,在$x&gt;x_0$时，有$f’(x)&lt;0$,则函数f(x)在$x_0$处取得极大值</li>
+<li>若在 $ x&lt;x_0 $时，有$f’(x)&lt;0$,在$x&gt;x_0$时，有$f’(x)&gt;0$,则函数f(x)在$x_0$处取得极小值<h3 id="极值的第二充分条件"><a href="#极值的第二充分条件" class="headerlink" title="极值的第二充分条件"></a>极值的第二充分条件</h3>设函数f(x)在$x_0$处具有二阶导数，并且$f’(x_0)=0,f”(x_0)\neq 0$，则有</li>
+<li>当$f”(x_0)&lt;0$时，函数$f(x_0)$在$x_0$处取得极大值</li>
+<li>当$f”(x_0)&gt;0$时，函数$f(x_0)$在$x_0$处取得极小值<h2 id="函数的凹凸性"><a href="#函数的凹凸性" class="headerlink" title="函数的凹凸性"></a>函数的凹凸性</h2>设函数f(x)在[a,b]上连续，在(a,b)内具有二阶导数，则有</li>
+<li>当$f”(x)\geq 0$时，函数f(x)在[a,b]上是凹函数</li>
+<li>当$f”(x)\leq 0$时，函数f(x)在[a,b]上是凸函数<h2 id="曲率"><a href="#曲率" class="headerlink" title="曲率"></a>曲率</h2>$K=|\frac{y”}{(\sqrt{1+y’^{2}})^3}|=\frac{|x’(t)y”(t)-x”(t)y’(t)|}{(\sqrt{x’(t)^2+y’(t)^2})^3}$<h1 id="一元函数的不定积分"><a href="#一元函数的不定积分" class="headerlink" title="一元函数的不定积分"></a>一元函数的不定积分</h1></li>
+<li>第一换元法:$\int f[\varphi(x)]\varphi ‘(x)dx=[\int f(u)du]_{u=\varphi(x)}$</li>
+<li>第二换元法:$ \int f(x)dx=[\int f[\varphi(t)]\varphi ‘(t)]_{t=\varphi ^{-1}(x)} $</li>
+<li>分步积分法:$\int udv=uv-\int vdu$<h1 id="一元函数定积分"><a href="#一元函数定积分" class="headerlink" title="一元函数定积分"></a>一元函数定积分</h1><h2 id="牛顿-莱布尼兹公式"><a href="#牛顿-莱布尼兹公式" class="headerlink" title="牛顿-莱布尼兹公式"></a>牛顿-莱布尼兹公式</h2>设函数 $f(x)\in C[a,b]$，函数F(x)是f(x)在区间[a,b]上的一个原函数，则有:$\int_{a}^{b}f(x)dx=F(b)-F(a)$</li>
+</ul>
+
       
     </div>
 
