@@ -1371,4 +1371,45 @@
         <tag>aps</tag>
       </tags>
   </entry>
+  <entry>
+    <title>大学物理基础</title>
+    <url>/2022/03/19/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="质点运动学"><a href="#质点运动学" class="headerlink" title="质点运动学"></a>质点运动学</h1><h2 id="参考系"><a href="#参考系" class="headerlink" title="参考系"></a>参考系</h2><ul>
+<li>地心参考系</li>
+<li>太阳参考系<h2 id="质点的位矢、位移和速度"><a href="#质点的位矢、位移和速度" class="headerlink" title="质点的位矢、位移和速度"></a>质点的位矢、位移和速度</h2></li>
+<li>质点</li>
+<li>平均速度</li>
+<li>瞬时速度</li>
+<li>分速度<h2 id="加速度"><a href="#加速度" class="headerlink" title="加速度"></a>加速度</h2></li>
+<li>瞬时加速度</li>
+<li>平均加速度</li>
+<li>匀加速运动</li>
+<li>重力加速度</li>
+<li>自由落体运动</li>
+<li>角速度<h2 id="圆周运动"><a href="#圆周运动" class="headerlink" title="圆周运动"></a>圆周运动</h2></li>
+<li>切向加速度</li>
+<li>向心加速度(法向加速度)<h2 id="相对运动"><a href="#相对运动" class="headerlink" title="相对运动"></a>相对运动</h2></li>
+<li>伽利略速度变换<h1 id="运动与力"><a href="#运动与力" class="headerlink" title="运动与力"></a>运动与力</h1><h2 id="牛顿运动定律"><a href="#牛顿运动定律" class="headerlink" title="牛顿运动定律"></a>牛顿运动定律</h2></li>
+<li>第一定律:任何物体都保持静止的或沿一条直线作匀速运动的状态，除非作用在它上面的力迫使它改变这种状态</li>
+<li>第二定律:运动的变化与所加的动力成正比，并且发生在这力所沿的直线的方向上</li>
+<li>第三定律:对于每一个作用，总有一个相等的反作用与之相反；或者说，两个物体对各自对方的相互作用总是相等的，并且指向相反的方向<h2 id="常见的几种力"><a href="#常见的几种力" class="headerlink" title="常见的几种力"></a>常见的几种力</h2></li>
+<li>重力</li>
+<li>弹性力</li>
+<li>摩擦力<h1 id="动量与角动量"><a href="#动量与角动量" class="headerlink" title="动量与角动量"></a>动量与角动量</h1><h2 id="冲量与动量定理"><a href="#冲量与动量定理" class="headerlink" title="冲量与动量定理"></a>冲量与动量定理</h2>$Fdt=dp$<h2 id="质点的角动量和角动量定理"><a href="#质点的角动量和角动量定理" class="headerlink" title="质点的角动量和角动量定理"></a>质点的角动量和角动量定理</h2></li>
+<li>角动量:$L=r\times p=r\times mv$</li>
+<li>力矩:$M=r\times F=\frac{dL}{dt}$<h1 id="功和能"><a href="#功和能" class="headerlink" title="功和能"></a>功和能</h1><h2 id="功"><a href="#功" class="headerlink" title="功"></a>功</h2>$W=\int fdr$<h2 id="动能定理"><a href="#动能定理" class="headerlink" title="动能定理"></a>动能定理</h2></li>
+<li>动能:$E_k=\frac{1}{2}mv^2$</li>
+<li>势能:$E_p=mgh$<h2 id="机械能守恒定理"><a href="#机械能守恒定理" class="headerlink" title="机械能守恒定理"></a>机械能守恒定理</h2>$W=E_{kB}-E_{kA}-(E_{pB}-E_{pA})$<h1 id="刚体的转动"><a href="#刚体的转动" class="headerlink" title="刚体的转动"></a>刚体的转动</h1><h2 id="转动惯量的计算"><a href="#转动惯量的计算" class="headerlink" title="转动惯量的计算"></a>转动惯量的计算</h2></li>
+<li>转动惯量:$J=\int r^2dm$<h2 id="转动中的功和能"><a href="#转动中的功和能" class="headerlink" title="转动中的功和能"></a>转动中的功和能</h2></li>
+<li>转动动能:$E_k=\frac{1}{2}Jw^2$<h1 id="静电场"><a href="#静电场" class="headerlink" title="静电场"></a>静电场</h1></li>
+<li>电荷的基本性质:两种电荷,量子性，电荷守恒</li>
+<li>库伦电荷:两个静止的点电荷之间的作用力$F=\frac{kq_1q_2}{r^2}e_r=\frac{q_1q_2}{4\pi \epsilon_0r^2}e_r,k=9\times 10^9 N·m^2/C^2,\epsilon_0=\frac{1}{4k\pi}=8.85\times 10^{-12}C^2/(N·m^2)$</li>
+<li>电场叠加原理:$F=\sum F_i$</li>
+<li>电场强度:$E=\frac{F}{q}$</li>
+<li>场强叠加原理:$E=\sum E_i=\sum_i \frac{q_i}{4\pi \epsilon_0 r_i^2}e_{ri}=\int \frac{dq}{4\pi \epsilon_0r^2}e_r$</li>
+<li>电通量:$\phi_e=\int_S·EdS$</li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
 </search>
