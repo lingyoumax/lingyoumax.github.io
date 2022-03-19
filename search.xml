@@ -1540,7 +1540,37 @@
   <entry>
     <title>高等数学A2</title>
     <url>/2022/03/19/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6A2/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="偏导数和全微分"><a href="#偏导数和全微分" class="headerlink" title="偏导数和全微分"></a>偏导数和全微分</h1><ul>
+<li>偏导数</li>
+<li>全微分<h1 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h1></li>
+<li>一重积分</li>
+<li>二重积分</li>
+<li>三重积分<h1 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h1></li>
+<li>阶数</li>
+<li>微分方程组</li>
+<li>再讲解一下这个和自己毕业设计的关联故事</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象程序设计</title>
+    <url>/2022/03/19/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1(C++)/</url>
+    <content><![CDATA[<h1 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h1><h2 id="动态内存"><a href="#动态内存" class="headerlink" title="动态内存"></a>动态内存</h2><ul>
+<li>创建动态对象</li>
+<li>释放动态内存</li>
+<li>动态数组<h2 id="模板与泛型编程"><a href="#模板与泛型编程" class="headerlink" title="模板与泛型编程"></a>模板与泛型编程</h2></li>
+<li>定义函数模板</li>
+<li>定义类模板<h2 id="排序和查找"><a href="#排序和查找" class="headerlink" title="排序和查找"></a>排序和查找</h2></li>
+<li>冒泡算法</li>
+<li>二分查找<h2 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a>继承和多态</h2></li>
+<li>继承</li>
+<li>拷贝</li>
+<li>虚函数<h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1>实现了一个可视化的学生成绩管理系统，能够新建、修改、删除、存储和读取学生成绩，并且可以用饼图、表格等可视化结果。</li>
+</ul>
+]]></content>
       <tags>
         <tag>aps</tag>
       </tags>
