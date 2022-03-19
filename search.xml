@@ -1443,7 +1443,25 @@
 <li>电场强度:$E=\frac{F}{q}$</li>
 <li>场强叠加原理:$E=\sum E_i=\sum_i \frac{q_i}{4\pi \epsilon_0 r_i^2}e_{ri}=\int \frac{dq}{4\pi \epsilon_0r^2}e_r$</li>
 <li>电通量:$\phi_e=\int_S·EdS$</li>
-<li></li>
+<li>高斯定律:$\oint E·dS=\frac{1}{\epsilon_0}\sum q_{in}$</li>
+<li>电偶极子在电场中受到的力矩:$M=p\times E$<h1 id="电势"><a href="#电势" class="headerlink" title="电势"></a>电势</h1></li>
+<li>静电场是保守场:$\oint_L E·dr=0$</li>
+<li>电势差:$\varphi_1-\varphi_2=\int_{P_1}^{P_2}E·dr$</li>
+<li>电势:$\varphi_P=\int_{P}^{P_0}E·dr$,($P_0$是零电势点)</li>
+<li>电势叠加原理:$\varphi=\sum \varphi_i$</li>
+<li>点电荷的电势:$\varphi=\frac{q}{4\pi \epsilon_0r}$</li>
+<li>电荷在外电场中的电势能:$W=q\varphi$</li>
+<li>电荷系的静电能:$W=\frac{1}{2}\sum q\varphi $<h1 id="静电场中的电介质"><a href="#静电场中的电介质" class="headerlink" title="静电场中的电介质"></a>静电场中的电介质</h1></li>
+<li>电容器的电容:$C=\frac{Q}{U}$</li>
+<li>并联电容:$C=\sum C_i$</li>
+<li>串联电容:$\frac{1}{C}=\sum \frac{1}{C_i}$</li>
+<li>电容器的能量:$W=\frac{1}{2}\frac{Q^2}{C}=\frac{1}{2}CU^2=\frac{1}{2}QU$<h1 id="恒定电流"><a href="#恒定电流" class="headerlink" title="恒定电流"></a>恒定电流</h1></li>
+<li>电流密度:$J=nqv$</li>
+<li>电流:$I=\int_S J·dS=-\frac{dq}{dt}$</li>
+<li>欧姆定律:$U=IR$</li>
+<li>电阻:$R=\rho \frac{l}{S}$</li>
+<li>焦耳定律:$P=I^2R$<h1 id="磁场"><a href="#磁场" class="headerlink" title="磁场"></a>磁场</h1></li>
+<li>洛伦兹公式:$F=qv\times B$</li>
 </ul>
 ]]></content>
       <tags>
