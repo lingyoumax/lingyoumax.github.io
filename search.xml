@@ -1621,4 +1621,145 @@
         <tag>aps</tag>
       </tags>
   </entry>
+  <entry>
+    <title>概率论与数理统计A</title>
+    <url>/2022/03/20/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1A/</url>
+    <content><![CDATA[<h1 id="随机事件及其概率"><a href="#随机事件及其概率" class="headerlink" title="随机事件及其概率"></a>随机事件及其概率</h1><ul>
+<li>随机试验</li>
+<li>频率</li>
+<li>概率</li>
+<li>相互独立</li>
+<li>等可能概型(古典概型)</li>
+<li>几何概型</li>
+<li>条件概率</li>
+<li>全概率公式:$P(A)=P(A|B_1)P(B_1)+P(A|B_2)P(B_2)+…+P(A|B_n)P(B_n)$</li>
+<li>贝叶斯公式:$P(B_i|A)=\frac{P(A|B_i)P(B_i)}{\sum_{j=1}^nP(A|B_j)P(B_j)}$/<h1 id="随机变量及其概率分布"><a href="#随机变量及其概率分布" class="headerlink" title="随机变量及其概率分布"></a>随机变量及其概率分布</h1><h2 id="分布函数"><a href="#分布函数" class="headerlink" title="分布函数"></a>分布函数</h2></li>
+<li>0-1分布</li>
+<li>二项分布:$\varepsilon \sim B(n,p),p_k=C_n^kp^k(1-p)^k$</li>
+<li>泊松分布:$\varepsilon \sim P(\lambda),p_k=\frac{\lambda^k e^{-\lambda}}{k!}$</li>
+<li>均匀分布:$f(x)=\frac{l}{b-a},a\leq x\leq b$</li>
+<li>指数分布:$f(x)=\frac{1}{\theta}e^{-\frac{x}{\theta}}$</li>
+<li>正态分布:$f(x)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(x-\mu)^2}{2 \sigma^2}}$<h1 id="随机变量的数字特征"><a href="#随机变量的数字特征" class="headerlink" title="随机变量的数字特征"></a>随机变量的数字特征</h1></li>
+<li>方差:$D(X)=E(X^2)-E^2(X)$</li>
+<li>均值</li>
+<li>绝对值<h2 id="常见随机变量的方差"><a href="#常见随机变量的方差" class="headerlink" title="常见随机变量的方差"></a>常见随机变量的方差</h2></li>
+<li>两点分布:$D=p(1-p)$</li>
+<li>二项分布:$D=np(1-p)$</li>
+<li>泊松分布:$D=\lambda$</li>
+<li>均匀分布:$D=\frac{(b-a)^2}{12}$</li>
+<li>指数分布:$D=\frac{1}{\lambda ^2}$</li>
+<li>正态分布:$D=\sigma^2$<h2 id="协方差与相关系数"><a href="#协方差与相关系数" class="headerlink" title="协方差与相关系数"></a>协方差与相关系数</h2></li>
+<li>协方差:$Cov(X,Y)=E(XY)-E(X)E(Y)$</li>
+<li>相关系数:$\rho_{XY}=\frac{Cov(X,Y)}{\sqrt(D(X))\sqrt{D(Y)}}$</li>
+<li>完全线性相关<h1 id="假设检验"><a href="#假设检验" class="headerlink" title="假设检验"></a>假设检验</h1><h1 id="方差分析"><a href="#方差分析" class="headerlink" title="方差分析"></a>方差分析</h1></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>离散数学A</title>
+    <url>/2022/03/20/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6A/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机组成原理</title>
+    <url>/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h1 id="计算机系统概论"><a href="#计算机系统概论" class="headerlink" title="计算机系统概论"></a>计算机系统概论</h1><h2 id="计算机分类"><a href="#计算机分类" class="headerlink" title="计算机分类"></a>计算机分类</h2><ul>
+<li>电子模拟计算机</li>
+<li>电子数字计算机<h2 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h2></li>
+<li>吞吐量</li>
+<li>相应时间</li>
+<li>利用率</li>
+<li>处理机字长</li>
+<li>总线宽度</li>
+<li>存储器容量</li>
+<li>存储器带宽</li>
+<li>主频/时钟周期</li>
+<li>CPU执行时间<h2 id="指令的形式"><a href="#指令的形式" class="headerlink" title="指令的形式"></a>指令的形式</h2></li>
+<li>操作码、地址码</li>
+<li>冯·诺伊曼结构：指令和数据放在同一个存储器中</li>
+<li>哈佛结构:指令和数据放在不同的存储器中<h2 id="控制器的基本任务"><a href="#控制器的基本任务" class="headerlink" title="控制器的基本任务"></a>控制器的基本任务</h2></li>
+<li>取值周期</li>
+<li>执行周期<h2 id="软件执行过程"><a href="#软件执行过程" class="headerlink" title="软件执行过程"></a>软件执行过程</h2></li>
+<li>$\text{C语言程序}\stackrel{\text{编译器}}{\longrightarrow}\text{汇编语言程序}\stackrel{\text{汇编器}}{\longrightarrow}\text{目标代码}\stackrel{\text{链接器}}{\longrightarrow}\text{可执行代码}$<h2 id="计算机系统的层次"><a href="#计算机系统的层次" class="headerlink" title="计算机系统的层次"></a>计算机系统的层次</h2></li>
+<li>微程序设计级</li>
+<li>一般机器级</li>
+<li>操作系统级</li>
+<li>汇编语言级</li>
+<li>高级语言层<h1 id="运算方法和运算器"><a href="#运算方法和运算器" class="headerlink" title="运算方法和运算器"></a>运算方法和运算器</h1><h2 id="数据格式"><a href="#数据格式" class="headerlink" title="数据格式"></a>数据格式</h2></li>
+<li>32位浮点数:1位符号位，8位阶码，23位尾数</li>
+<li>64位浮点数:1位符号位，11位阶码，52位尾数<h2 id="数的机器码表示"><a href="#数的机器码表示" class="headerlink" title="数的机器码表示"></a>数的机器码表示</h2></li>
+<li>原码</li>
+<li>反码</li>
+<li>补码<h2 id="定点加法、减法运算"><a href="#定点加法、减法运算" class="headerlink" title="定点加法、减法运算"></a>定点加法、减法运算</h2></li>
+<li>补码加法</li>
+<li>补码减法<h1 id="多层次的存储器"><a href="#多层次的存储器" class="headerlink" title="多层次的存储器"></a>多层次的存储器</h1><h2 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h2></li>
+<li>高速缓冲存储器(cache)</li>
+<li>主存储器</li>
+<li>外存储器<h2 id="存储方式"><a href="#存储方式" class="headerlink" title="存储方式"></a>存储方式</h2></li>
+<li>顺序方式</li>
+<li>交叉方式<h1 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h1><h2 id="操作数类型"><a href="#操作数类型" class="headerlink" title="操作数类型"></a>操作数类型</h2></li>
+<li>地址数据</li>
+<li>数值数据</li>
+<li>字符数据</li>
+<li>逻辑数据<h2 id="指令寻址方向"><a href="#指令寻址方向" class="headerlink" title="指令寻址方向"></a>指令寻址方向</h2></li>
+<li>顺序寻址方式</li>
+<li>跳跃寻址方式<h2 id="操作数基本寻址方式"><a href="#操作数基本寻址方式" class="headerlink" title="操作数基本寻址方式"></a>操作数基本寻址方式</h2></li>
+<li>隐含寻址</li>
+<li>立即寻址</li>
+<li>直接寻址</li>
+<li>间接寻址</li>
+<li>寄存器寻址</li>
+<li>寄存器间接寻址</li>
+<li>偏移寻址</li>
+<li>段寻址</li>
+<li>堆栈寻址<h2 id="指令的分类"><a href="#指令的分类" class="headerlink" title="指令的分类"></a>指令的分类</h2></li>
+<li>数据传送指令</li>
+<li>算术运算指令</li>
+<li>逻辑运算指令</li>
+<li>程序控制指令</li>
+<li>输入输出指令</li>
+<li>字符串处理指令</li>
+<li>特权指令</li>
+<li>其它指令<h2 id="指令集分类"><a href="#指令集分类" class="headerlink" title="指令集分类"></a>指令集分类</h2></li>
+<li>精简指令集</li>
+<li>复杂指令集<h1 id="中央处理器"><a href="#中央处理器" class="headerlink" title="中央处理器"></a>中央处理器</h1><h2 id="CPU的功能"><a href="#CPU的功能" class="headerlink" title="CPU的功能"></a>CPU的功能</h2></li>
+<li>指令控制</li>
+<li>操作控制</li>
+<li>时间控制</li>
+<li>数据加工<h2 id="CPU的基本组成"><a href="#CPU的基本组成" class="headerlink" title="CPU的基本组成"></a>CPU的基本组成</h2></li>
+<li>控制器:程序计数器、指令寄存器、指令译码器、时序产生器和操作控制器</li>
+<li>运算器：算术逻辑单元(ALU)、通用寄存器、数据缓存器(DR)和状态条件寄存器PSW<h2 id="控制方式"><a href="#控制方式" class="headerlink" title="控制方式"></a>控制方式</h2></li>
+<li>同步控制方式</li>
+<li>异步控制方式</li>
+<li>联合控制方式<h1 id="总线系统"><a href="#总线系统" class="headerlink" title="总线系统"></a>总线系统</h1><h2 id="总线的连接方式"><a href="#总线的连接方式" class="headerlink" title="总线的连接方式"></a>总线的连接方式</h2></li>
+<li>单总线方式</li>
+<li>多总线方式<h2 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h2></li>
+<li>数据传送总线</li>
+<li>仲裁总线</li>
+<li>中断和同步总线</li>
+<li>公用线<h2 id="集中式仲裁"><a href="#集中式仲裁" class="headerlink" title="集中式仲裁"></a>集中式仲裁</h2></li>
+<li>链式查询方式</li>
+<li>计数器定时查询方式</li>
+<li>独立请求方式</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机组成原理课程设计</title>
+    <url>/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<p>在这门课程设计中，老师给我们的任务是去设计一块简易cpu。说实话，这个任务对于我们来说还是很难的，cpu是计算机中最重要也是最基础的东西。这一任务不像听起来这么简单，要设计出cpu的执行器件和存储器件，以及让它们连接起来的总线，最后还要让他们一起运行起来。通过我自己的努力，我最终将这一任务完成了，并且对计算机内部结构有了更深的理解。</p>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
 </search>
