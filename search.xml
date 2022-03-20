@@ -1575,4 +1575,50 @@
         <tag>aps</tag>
       </tags>
   </entry>
+  <entry>
+    <title>数字逻辑</title>
+    <url>/2022/03/20/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/</url>
+    <content><![CDATA[<h1 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h1><h2 id="数制转换"><a href="#数制转换" class="headerlink" title="数制转换"></a>数制转换</h2><ul>
+<li>二进制</li>
+<li>十进制</li>
+<li>十六进制<h2 id="带符号数的代码表示"><a href="#带符号数的代码表示" class="headerlink" title="带符号数的代码表示"></a>带符号数的代码表示</h2></li>
+<li>原码</li>
+<li>反码</li>
+<li>补码</li>
+</ul>
+<h1 id="逻辑代数基础"><a href="#逻辑代数基础" class="headerlink" title="逻辑代数基础"></a>逻辑代数基础</h1><h2 id="逻辑代数的基本概念"><a href="#逻辑代数的基本概念" class="headerlink" title="逻辑代数的基本概念"></a>逻辑代数的基本概念</h2><ul>
+<li>交换律</li>
+<li>结合律</li>
+<li>分配律</li>
+<li>0-1律</li>
+<li>与</li>
+<li>或</li>
+<li>非<h2 id="复合逻辑"><a href="#复合逻辑" class="headerlink" title="复合逻辑"></a>复合逻辑</h2></li>
+<li>与非逻辑:$\overline{A·B}$</li>
+<li>或非逻辑:$\overline{A+B}$</li>
+<li>与或非逻辑:$\overline{A·B+B·C}$</li>
+<li>异或逻辑:$\overline{A}·B+A·\overline{B}$</li>
+<li>同或逻辑:$\overline{A}·\overline{B}+A·B$<h1 id="集成逻辑门"><a href="#集成逻辑门" class="headerlink" title="集成逻辑门"></a>集成逻辑门</h1></li>
+<li>或门</li>
+<li>与门</li>
+<li>非门</li>
+<li>与非门</li>
+<li>或非门</li>
+<li>与或非门</li>
+<li>异或门</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数字逻辑课程设计</title>
+    <url>/2022/03/20/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<p>用与门和或门实现一个简易二进制计数器，当使用者每点一次按钮，该计数器都会计数并将总数用灯的形式反应出来。</p>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
 </search>
