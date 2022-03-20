@@ -1661,7 +1661,12 @@
   <entry>
     <title>离散数学A</title>
     <url>/2022/03/20/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6A/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="命题逻辑"><a href="#命题逻辑" class="headerlink" title="命题逻辑"></a>命题逻辑</h1><ul>
+<li>能够分辨真假的陈述句叫做命题<h2 id="命题的分类"><a href="#命题的分类" class="headerlink" title="命题的分类"></a>命题的分类</h2></li>
+<li>原子命题<details>(Atomic Proposition)</details></li>
+<li>复合命题</li>
+</ul>
+]]></content>
       <tags>
         <tag>aps</tag>
       </tags>
