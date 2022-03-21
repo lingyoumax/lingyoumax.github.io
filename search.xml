@@ -1663,8 +1663,35 @@
     <url>/2022/03/20/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6A/</url>
     <content><![CDATA[<h1 id="命题逻辑"><a href="#命题逻辑" class="headerlink" title="命题逻辑"></a>命题逻辑</h1><ul>
 <li>能够分辨真假的陈述句叫做命题<h2 id="命题的分类"><a href="#命题的分类" class="headerlink" title="命题的分类"></a>命题的分类</h2></li>
-<li>原子命题<details>(Atomic Proposition)</details></li>
-<li>复合命题</li>
+<li>原子命题:不可再分</li>
+<li>复合命题:由原子命题组成</li>
+<li>命题常元:真值确定的原子命题</li>
+<li>命题变元:真值不确定的原子命题<h2 id="命题联结词"><a href="#命题联结词" class="headerlink" title="命题联结词"></a>命题联结词</h2></li>
+<li>否定词:$\lnot$</li>
+<li>合取词:$\bigwedge$</li>
+<li>析取词:$\bigvee$</li>
+<li>蕴含词:$\to$</li>
+<li>等价词:$\leftrightarrow$<h2 id="命题公式的分类"><a href="#命题公式的分类" class="headerlink" title="命题公式的分类"></a>命题公式的分类</h2></li>
+<li>重言式(永真式):所有指派下的公式a都为真</li>
+<li>矛盾式(永假式):所有指派下的公式a都为假</li>
+<li>可满足式:有能使公式a为真的指派<h2 id="范式"><a href="#范式" class="headerlink" title="范式"></a>范式</h2></li>
+<li>析取范式:$a_1 \bigvee a_2$</li>
+<li>合取范式:$a_1 \bigwedge a_2$</li>
+<li>范式存在定理:任一个命题公式都存在与之等值的析取范式和合取范式<h1 id="谓词逻辑"><a href="#谓词逻辑" class="headerlink" title="谓词逻辑"></a>谓词逻辑</h1><h2 id="个体"><a href="#个体" class="headerlink" title="个体"></a>个体</h2>可以独立存在的物体为个体<h2 id="谓词"><a href="#谓词" class="headerlink" title="谓词"></a>谓词</h2>表示单个个体的性质或两个以上个体关系的词为谓词<h2 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h2></li>
+<li>全称量词:$\forall$</li>
+<li>唯一量词:$\exist$<h1 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h1><h2 id="关系的基本概念"><a href="#关系的基本概念" class="headerlink" title="关系的基本概念"></a>关系的基本概念</h2></li>
+<li>n元关系</li>
+<li>二元关系</li>
+<li>空关系</li>
+<li>普遍关系<h2 id="关系的表示方法"><a href="#关系的表示方法" class="headerlink" title="关系的表示方法"></a>关系的表示方法</h2></li>
+<li>集合表示法</li>
+<li>关系矩阵</li>
+<li>关系图<h2 id="关系的性质"><a href="#关系的性质" class="headerlink" title="关系的性质"></a>关系的性质</h2></li>
+<li>自反关系</li>
+<li>反自反关系</li>
+<li>对称关系</li>
+<li>反对称关系</li>
+<li>传递关系</li>
 </ul>
 ]]></content>
       <tags>
@@ -1762,6 +1789,38 @@
     <title>计算机组成原理课程设计</title>
     <url>/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<p>在这门课程设计中，老师给我们的任务是去设计一块简易cpu。说实话，这个任务对于我们来说还是很难的，cpu是计算机中最重要也是最基础的东西。这一任务不像听起来这么简单，要设计出cpu的执行器件和存储器件，以及让它们连接起来的总线，最后还要让他们一起运行起来。通过我自己的努力，我最终将这一任务完成了，并且对计算机内部结构有了更深的理解。</p>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据结构A</title>
+    <url>/2022/03/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84A/</url>
+    <content><![CDATA[<h1 id="数据结构的概念"><a href="#数据结构的概念" class="headerlink" title="数据结构的概念"></a>数据结构的概念</h1><p>数据结构由某一数据元素的集合和该集合中数据元素之间的关系组成。</p>
+<h2 id="数据结构的分类"><a href="#数据结构的分类" class="headerlink" title="数据结构的分类"></a>数据结构的分类</h2><ul>
+<li>线性结构</li>
+<li>非线性结构<h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1>线性表是一个有限序列<h2 id="线性表的分类"><a href="#线性表的分类" class="headerlink" title="线性表的分类"></a>线性表的分类</h2></li>
+<li>单向链表</li>
+<li>双向链表<h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2>栈为只允许在表的末端进行插入和删除的线性表<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2>队列只允许在表的一段插入，在另一端删除<h1 id="数组、串和广义表"><a href="#数组、串和广义表" class="headerlink" title="数组、串和广义表"></a>数组、串和广义表</h1><h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2>数组是下标和值组成的序对的集合<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2>是n个字符的一个有限序列<h2 id="广义表"><a href="#广义表" class="headerlink" title="广义表"></a>广义表</h2>n个表元素组成的有限序列<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的术语"><a href="#树的术语" class="headerlink" title="树的术语"></a>树的术语</h2></li>
+<li>结点</li>
+<li>结点的度</li>
+<li>叶结点</li>
+<li>分支结点</li>
+<li>子女结点</li>
+<li>父结点</li>
+<li>兄弟结点</li>
+<li>祖先结点</li>
+<li>子孙结点</li>
+<li>结点所处层次</li>
+<li>树的深度</li>
+<li>树的高度</li>
+<li>树的度</li>
+<li>有序树</li>
+<li>无序树</li>
+<li>森林<h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2>二叉树的特点是最多有两个子结点</li>
+<li>在二叉树的第i层最多有$2^{i-1}$个结点</li>
+</ul>
 ]]></content>
       <tags>
         <tag>aps</tag>
