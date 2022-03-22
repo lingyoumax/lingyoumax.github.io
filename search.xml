@@ -1820,6 +1820,67 @@
 <li>无序树</li>
 <li>森林<h2 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h2>二叉树的特点是最多有两个子结点</li>
 <li>在二叉树的第i层最多有$2^{i-1}$个结点</li>
+<li>深度为k的二叉树最少有k个结点，最多有$2^k-1$个结点</li>
+<li>对任何一颗非空二叉树，如果其叶节点数为$n_0$，度为2的非叶节点为$n_2$，则$n_0=n_2+1$</li>
+<li>具有n个结点的完全二叉树的深度为$\lceil log_2(n+1)\rceil$<h3 id="遍历算法"><a href="#遍历算法" class="headerlink" title="遍历算法"></a>遍历算法</h3></li>
+<li>前序遍历:根右左</li>
+<li>中序遍历:右根左</li>
+<li>后序遍历:右左根<h3 id="树与森林的遍历"><a href="#树与森林的遍历" class="headerlink" title="树与森林的遍历"></a>树与森林的遍历</h3></li>
+<li>广度优先</li>
+<li>深度优先<h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><h3 id="堆的分类"><a href="#堆的分类" class="headerlink" title="堆的分类"></a>堆的分类</h3></li>
+<li>最大堆</li>
+<li>最小堆<h2 id="Huffman树"><a href="#Huffman树" class="headerlink" title="Huffman树"></a>Huffman树</h2>构造方法:让两个权值最小的结点优先结合成一个新结点，重复执行<h1 id="集合与字典"><a href="#集合与字典" class="headerlink" title="集合与字典"></a>集合与字典</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2>集合是成员的一个群组，具有相异性、唯一性和无序性。<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2>字典是一些元素的集合，每个集合有一个称作关键码的域，不同元素的关键码互不相同。<h1 id="收索结构"><a href="#收索结构" class="headerlink" title="收索结构"></a>收索结构</h1></li>
+<li>二叉搜索树</li>
+<li>AVL树</li>
+<li>伸展树</li>
+<li>红黑树<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><h2 id="图的相关概念"><a href="#图的相关概念" class="headerlink" title="图的相关概念"></a>图的相关概念</h2></li>
+<li>有向图</li>
+<li>无向图</li>
+<li>完全图</li>
+<li>权</li>
+<li>邻接顶点</li>
+<li>子图</li>
+<li>度</li>
+<li>路径</li>
+<li>路径长度</li>
+<li>简单路径与回路</li>
+<li>连通图与连通分量</li>
+<li>生成树<h2 id="图的存储及表示方式"><a href="#图的存储及表示方式" class="headerlink" title="图的存储及表示方式"></a>图的存储及表示方式</h2></li>
+<li>邻接矩阵</li>
+<li>邻接表</li>
+<li>邻接多重表<h2 id="图的遍历"><a href="#图的遍历" class="headerlink" title="图的遍历"></a>图的遍历</h2></li>
+<li>深度优先</li>
+<li>广度优先<h2 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h2></li>
+<li>Kruskal算法</li>
+<li>Prim算法<h2 id="最短路径"><a href="#最短路径" class="headerlink" title="最短路径"></a>最短路径</h2></li>
+<li>Dijkstra算法</li>
+<li>Floyd算法<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2></li>
+<li>稳定性</li>
+<li>时空复杂度<h2 id="内部排序"><a href="#内部排序" class="headerlink" title="内部排序"></a>内部排序</h2><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3></li>
+<li>直接插入排序</li>
+<li>折半插入排序</li>
+<li>希尔排序<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3></li>
+<li>冒泡排序</li>
+<li>快速排序<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3></li>
+<li>直接选择排序</li>
+<li>堆排序</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>aps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java程序设计</title>
+    <url>/2022/03/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[<h1 id="java入门"><a href="#java入门" class="headerlink" title="java入门"></a>java入门</h1><h2 id="java语言的特点"><a href="#java语言的特点" class="headerlink" title="java语言的特点"></a>java语言的特点</h2><ul>
+<li>简单</li>
+<li>面向对象</li>
+<li>平台无关<h2 id="java程序分类"><a href="#java程序分类" class="headerlink" title="java程序分类"></a>java程序分类</h2></li>
+<li>应用程序</li>
+<li>小应用程序<h1 id="java面向对象程序设计"><a href="#java面向对象程序设计" class="headerlink" title="java面向对象程序设计"></a>java面向对象程序设计</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="语法格式"><a href="#语法格式" class="headerlink" title="语法格式"></a>语法格式</h3></li>
+<li>数据类型 变量命</li>
+<li>数据类型 变量名1，变量名2<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3>关键字都是小写的<h1 id="子类与继承"><a href="#子类与继承" class="headerlink" title="子类与继承"></a>子类与继承</h1></li>
 </ul>
 ]]></content>
       <tags>
