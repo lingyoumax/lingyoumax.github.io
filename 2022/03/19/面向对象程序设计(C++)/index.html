@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="理论动态内存 创建动态对象 释放动态内存 动态数组模板与泛型编程 定义函数模板 定义类模板排序和查找 冒泡算法 二分查找继承和多态 继承 拷贝 虚函数实践实现了一个可视化的学生成绩管理系统，能够新建、修改、删除、存储和读取学生成绩，并且可以用饼图、表格等可视化结果。">
+  <meta name="description" content="Orient Object Programming(C++) 动态内存dynamic memory  创建动态对象 释放动态内存 动态数组模板与泛型编程template 定义函数模板 定义类模板排序和查找 冒泡算法 二分查找继承和多态 继承 inheritance 拷贝 虚函数 virtual function">
 <meta property="og:type" content="article">
-<meta property="og:title" content="面向对象程序设计">
+<meta property="og:title" content="面向对象程序设计(C++)">
 <meta property="og:url" content="http://yoursite.com/2022/03/19/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1(C++)/index.html">
 <meta property="og:site_name" content="呤游的家">
-<meta property="og:description" content="理论动态内存 创建动态对象 释放动态内存 动态数组模板与泛型编程 定义函数模板 定义类模板排序和查找 冒泡算法 二分查找继承和多态 继承 拷贝 虚函数实践实现了一个可视化的学生成绩管理系统，能够新建、修改、删除、存储和读取学生成绩，并且可以用饼图、表格等可视化结果。">
+<meta property="og:description" content="Orient Object Programming(C++) 动态内存dynamic memory  创建动态对象 释放动态内存 动态数组模板与泛型编程template 定义函数模板 定义类模板排序和查找 冒泡算法 二分查找继承和多态 继承 inheritance 拷贝 虚函数 virtual function">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-19T15:37:47.000Z">
-<meta property="article:modified_time" content="2022-03-19T15:57:34.049Z">
+<meta property="article:modified_time" content="2022-03-26T12:33:54.452Z">
 <meta property="article:author" content="lingyoumax">
 <meta property="article:tag" content="aps">
 <meta name="twitter:card" content="summary">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>面向对象程序设计 | 呤游的家</title>
+  <title>面向对象程序设计(C++) | 呤游的家</title>
   
 
 
@@ -209,7 +209,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          面向对象程序设计
+          面向对象程序设计(C++)
         </h1>
 
         <div class="post-meta">
@@ -218,10 +218,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-03-19 23:37:47 / 修改时间：23:57:34" itemprop="dateCreated datePublished" datetime="2022-03-19T23:37:47+08:00">2022-03-19</time>
+              <time title="创建时间：2022-03-19 23:37:47" itemprop="dateCreated datePublished" datetime="2022-03-19T23:37:47+08:00">2022-03-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-26 20:33:54" itemprop="dateModified" datetime="2022-03-26T20:33:54+08:00">2022-03-26</time>
+              </span>
 
           
   
@@ -248,17 +254,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h1><h2 id="动态内存"><a href="#动态内存" class="headerlink" title="动态内存"></a>动态内存</h2><ul>
+        <p>Orient Object Programming(C++)</p>
+<h1 id="动态内存"><a href="#动态内存" class="headerlink" title="动态内存"></a>动态内存</h1><p>dynamic memory</p>
+<ul>
 <li>创建动态对象</li>
 <li>释放动态内存</li>
-<li>动态数组<h2 id="模板与泛型编程"><a href="#模板与泛型编程" class="headerlink" title="模板与泛型编程"></a>模板与泛型编程</h2></li>
+<li>动态数组<h1 id="模板与泛型编程"><a href="#模板与泛型编程" class="headerlink" title="模板与泛型编程"></a>模板与泛型编程</h1>template</li>
 <li>定义函数模板</li>
-<li>定义类模板<h2 id="排序和查找"><a href="#排序和查找" class="headerlink" title="排序和查找"></a>排序和查找</h2></li>
+<li>定义类模板<h1 id="排序和查找"><a href="#排序和查找" class="headerlink" title="排序和查找"></a>排序和查找</h1></li>
 <li>冒泡算法</li>
-<li>二分查找<h2 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a>继承和多态</h2></li>
+<li>二分查找<h1 id="继承和多态"><a href="#继承和多态" class="headerlink" title="继承和多态"></a>继承和多态</h1></li>
 <li>继承</li>
+<li>inheritance</li>
 <li>拷贝</li>
-<li>虚函数<h1 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h1>实现了一个可视化的学生成绩管理系统，能够新建、修改、删除、存储和读取学生成绩，并且可以用饼图、表格等可视化结果。</li>
+<li>虚函数</li>
+<li>virtual function</li>
 </ul>
 
     </div>
@@ -298,12 +308,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/19/%E7%94%B5%E5%B7%A5%E4%B8%8E%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AFC/" rel="prev" title="电工与电子技术C">
-      <i class="fa fa-chevron-left"></i> 电工与电子技术C
+    <a href="/2022/03/19/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6A2/" rel="prev" title="高等数学A2">
+      <i class="fa fa-chevron-left"></i> 高等数学A2
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/03/20/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/" rel="next" title="数字逻辑">
-      数字逻辑 <i class="fa fa-chevron-right"></i>
+    <a href="/2022/03/19/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1(C++)/" rel="next" title="面向对象课程设计(C++)">
+      面向对象课程设计(C++) <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -364,7 +374,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%90%86%E8%AE%BA"><span class="nav-number">1.</span> <span class="nav-text">理论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98"><span class="nav-number">1.1.</span> <span class="nav-text">动态内存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E6%9D%BF%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B"><span class="nav-number">1.2.</span> <span class="nav-text">模板与泛型编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E5%92%8C%E6%9F%A5%E6%89%BE"><span class="nav-number">1.3.</span> <span class="nav-text">排序和查找</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81"><span class="nav-number">1.4.</span> <span class="nav-text">继承和多态</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9E%E8%B7%B5"><span class="nav-number">2.</span> <span class="nav-text">实践</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98"><span class="nav-number">1.</span> <span class="nav-text">动态内存</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A8%A1%E6%9D%BF%E4%B8%8E%E6%B3%9B%E5%9E%8B%E7%BC%96%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">模板与泛型编程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%92%E5%BA%8F%E5%92%8C%E6%9F%A5%E6%89%BE"><span class="nav-number">3.</span> <span class="nav-text">排序和查找</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81"><span class="nav-number">4.</span> <span class="nav-text">继承和多态</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -380,7 +390,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">88</span>
+          <span class="site-state-item-count">90</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="命题逻辑 能够分辨真假的陈述句叫做命题命题的分类 原子命题:不可再分 复合命题:由原子命题组成 命题常元:真值确定的原子命题 命题变元:真值不确定的原子命题命题联结词 否定词:$\lnot$ 合取词:$\bigwedge$ 析取词:$\bigvee$ 蕴含词:$\to$ 等价词:$\leftrightarrow$命题公式的分类 重言式(永真式):所有指派下的公式a都为真 矛盾式(永假式):所有指派">
+  <meta name="description" content="Discrete Mathematics A 命题逻辑proposition  能够分辨真假的陈述句叫做命题命题的分类 原子命题:不可再分 atomic proposition 复合命题:由原子命题组成 compoud proposition 命题常元:真值确定的原子命题 propositional constant 命题变元:真值不确定的原子命题 propositional variable命题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="离散数学A">
 <meta property="og:url" content="http://yoursite.com/2022/03/20/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6A/index.html">
 <meta property="og:site_name" content="呤游的家">
-<meta property="og:description" content="命题逻辑 能够分辨真假的陈述句叫做命题命题的分类 原子命题:不可再分 复合命题:由原子命题组成 命题常元:真值确定的原子命题 命题变元:真值不确定的原子命题命题联结词 否定词:$\lnot$ 合取词:$\bigwedge$ 析取词:$\bigvee$ 蕴含词:$\to$ 等价词:$\leftrightarrow$命题公式的分类 重言式(永真式):所有指派下的公式a都为真 矛盾式(永假式):所有指派">
+<meta property="og:description" content="Discrete Mathematics A 命题逻辑proposition  能够分辨真假的陈述句叫做命题命题的分类 原子命题:不可再分 atomic proposition 复合命题:由原子命题组成 compoud proposition 命题常元:真值确定的原子命题 propositional constant 命题变元:真值不确定的原子命题 propositional variable命题">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-20T13:32:26.000Z">
-<meta property="article:modified_time" content="2022-03-20T15:06:28.169Z">
+<meta property="article:modified_time" content="2022-03-27T04:12:53.323Z">
 <meta property="article:author" content="lingyoumax">
 <meta property="article:tag" content="aps">
 <meta name="twitter:card" content="summary">
@@ -218,10 +218,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-03-20 21:32:26 / 修改时间：23:06:28" itemprop="dateCreated datePublished" datetime="2022-03-20T21:32:26+08:00">2022-03-20</time>
+              <time title="创建时间：2022-03-20 21:32:26" itemprop="dateCreated datePublished" datetime="2022-03-20T21:32:26+08:00">2022-03-20</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-27 12:12:53" itemprop="dateModified" datetime="2022-03-27T12:12:53+08:00">2022-03-27</time>
+              </span>
 
           
   
@@ -248,37 +254,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="命题逻辑"><a href="#命题逻辑" class="headerlink" title="命题逻辑"></a>命题逻辑</h1><ul>
+        <p>Discrete Mathematics A</p>
+<h1 id="命题逻辑"><a href="#命题逻辑" class="headerlink" title="命题逻辑"></a>命题逻辑</h1><p>proposition</p>
+<ul>
 <li>能够分辨真假的陈述句叫做命题<h2 id="命题的分类"><a href="#命题的分类" class="headerlink" title="命题的分类"></a>命题的分类</h2></li>
 <li>原子命题:不可再分</li>
+<li>atomic proposition</li>
 <li>复合命题:由原子命题组成</li>
+<li>compoud proposition</li>
 <li>命题常元:真值确定的原子命题</li>
-<li>命题变元:真值不确定的原子命题<h2 id="命题联结词"><a href="#命题联结词" class="headerlink" title="命题联结词"></a>命题联结词</h2></li>
+<li>propositional constant</li>
+<li>命题变元:真值不确定的原子命题</li>
+<li>propositional variable<h2 id="命题联结词"><a href="#命题联结词" class="headerlink" title="命题联结词"></a>命题联结词</h2></li>
 <li>否定词:$\lnot$</li>
+<li>negation</li>
 <li>合取词:$\bigwedge$</li>
+<li>conjunction</li>
 <li>析取词:$\bigvee$</li>
+<li>disjunction</li>
 <li>蕴含词:$\to$</li>
-<li>等价词:$\leftrightarrow$<h2 id="命题公式的分类"><a href="#命题公式的分类" class="headerlink" title="命题公式的分类"></a>命题公式的分类</h2></li>
+<li>implication</li>
+<li>等价词:$\leftrightarrow$</li>
+<li>equivalence<h2 id="命题公式的分类"><a href="#命题公式的分类" class="headerlink" title="命题公式的分类"></a>命题公式的分类</h2></li>
 <li>重言式(永真式):所有指派下的公式a都为真</li>
+<li>tautology</li>
 <li>矛盾式(永假式):所有指派下的公式a都为假</li>
-<li>可满足式:有能使公式a为真的指派<h2 id="范式"><a href="#范式" class="headerlink" title="范式"></a>范式</h2></li>
+<li>absurdity</li>
+<li>可满足式:有能使公式a为真的指派</li>
+<li>contingency<h2 id="范式"><a href="#范式" class="headerlink" title="范式"></a>范式</h2></li>
 <li>析取范式:$a_1 \bigvee a_2$</li>
+<li>disjunctive normal form</li>
 <li>合取范式:$a_1 \bigwedge a_2$</li>
-<li>范式存在定理:任一个命题公式都存在与之等值的析取范式和合取范式<h1 id="谓词逻辑"><a href="#谓词逻辑" class="headerlink" title="谓词逻辑"></a>谓词逻辑</h1><h2 id="个体"><a href="#个体" class="headerlink" title="个体"></a>个体</h2>可以独立存在的物体为个体<h2 id="谓词"><a href="#谓词" class="headerlink" title="谓词"></a>谓词</h2>表示单个个体的性质或两个以上个体关系的词为谓词<h2 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h2></li>
+<li>conjunctive normal form</li>
+<li>范式存在定理:任一个命题公式都存在与之等值的析取范式和合取范式<h1 id="谓词逻辑"><a href="#谓词逻辑" class="headerlink" title="谓词逻辑"></a>谓词逻辑</h1><h2 id="个体"><a href="#个体" class="headerlink" title="个体"></a>个体</h2>individual</li>
+</ul>
+<p>可以独立存在的物体为个体</p>
+<h2 id="谓词"><a href="#谓词" class="headerlink" title="谓词"></a>谓词</h2><p>predicate</p>
+<p>表示单个个体的性质或两个以上个体关系的词为谓词</p>
+<h2 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h2><p>quantiication</p>
+<ul>
 <li>全称量词:$\forall$</li>
-<li>唯一量词:$\exist$<h1 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h1><h2 id="关系的基本概念"><a href="#关系的基本概念" class="headerlink" title="关系的基本概念"></a>关系的基本概念</h2></li>
+<li>universial quantifaction</li>
+<li>唯一量词:$\exist$</li>
+<li>existential quantification<h1 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h1><h2 id="关系的基本概念"><a href="#关系的基本概念" class="headerlink" title="关系的基本概念"></a>关系的基本概念</h2></li>
 <li>n元关系</li>
+<li>n-relation</li>
 <li>二元关系</li>
+<li>binary relation</li>
 <li>空关系</li>
-<li>普遍关系<h2 id="关系的表示方法"><a href="#关系的表示方法" class="headerlink" title="关系的表示方法"></a>关系的表示方法</h2></li>
-<li>集合表示法</li>
+<li>empty relation</li>
+<li>普遍关系</li>
+<li>total relation<h2 id="关系的表示方法"><a href="#关系的表示方法" class="headerlink" title="关系的表示方法"></a>关系的表示方法</h2></li>
+<li>关系集合</li>
+<li>relation set</li>
 <li>关系矩阵</li>
-<li>关系图<h2 id="关系的性质"><a href="#关系的性质" class="headerlink" title="关系的性质"></a>关系的性质</h2></li>
+<li>relation matrix</li>
+<li>关系图</li>
+<li>relation graph<h2 id="关系的性质"><a href="#关系的性质" class="headerlink" title="关系的性质"></a>关系的性质</h2></li>
 <li>自反关系</li>
+<li>reflexive relation</li>
 <li>反自反关系</li>
+<li>antireflexive relation</li>
 <li>对称关系</li>
+<li>symmetric relation</li>
 <li>反对称关系</li>
+<li>antisymmetric relation</li>
 <li>传递关系</li>
+<li>transitive relation</li>
 </ul>
 
     </div>
@@ -400,7 +442,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">88</span>
+          <span class="site-state-item-count">90</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
