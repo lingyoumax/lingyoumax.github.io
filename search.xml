@@ -441,7 +441,8 @@
   <entry>
     <title>Java程序设计</title>
     <url>/2022/03/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[<h1 id="java入门"><a href="#java入门" class="headerlink" title="java入门"></a>java入门</h1><h2 id="java语言的特点"><a href="#java语言的特点" class="headerlink" title="java语言的特点"></a>java语言的特点</h2><ul>
+    <content><![CDATA[<p>Java Programming</p>
+<h1 id="java入门"><a href="#java入门" class="headerlink" title="java入门"></a>java入门</h1><h2 id="java语言的特点"><a href="#java语言的特点" class="headerlink" title="java语言的特点"></a>java语言的特点</h2><ul>
 <li>简单</li>
 <li>面向对象</li>
 <li>平台无关<h2 id="java程序分类"><a href="#java程序分类" class="headerlink" title="java程序分类"></a>java程序分类</h2></li>
@@ -1504,9 +1505,21 @@
 <h1 id="数据结构的概念"><a href="#数据结构的概念" class="headerlink" title="数据结构的概念"></a>数据结构的概念</h1><p>数据结构由某一数据元素的集合和该集合中数据元素之间的关系组成。</p>
 <h2 id="数据结构的分类"><a href="#数据结构的分类" class="headerlink" title="数据结构的分类"></a>数据结构的分类</h2><ul>
 <li>线性结构</li>
-<li>非线性结构<h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1>线性表是一个有限序列<h2 id="线性表的分类"><a href="#线性表的分类" class="headerlink" title="线性表的分类"></a>线性表的分类</h2></li>
+<li>linear structure</li>
+<li>非线性结构</li>
+<li>nonlinear structure<h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1>线性表是一个有限序列<h2 id="线性表的分类"><a href="#线性表的分类" class="headerlink" title="线性表的分类"></a>线性表的分类</h2>linked list</li>
 <li>单向链表</li>
-<li>双向链表<h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2>栈为只允许在表的末端进行插入和删除的线性表<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2>队列只允许在表的一段插入，在另一端删除<h1 id="数组、串和广义表"><a href="#数组、串和广义表" class="headerlink" title="数组、串和广义表"></a>数组、串和广义表</h1><h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2>数组是下标和值组成的序对的集合<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2>是n个字符的一个有限序列<h2 id="广义表"><a href="#广义表" class="headerlink" title="广义表"></a>广义表</h2>n个表元素组成的有限序列<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的术语"><a href="#树的术语" class="headerlink" title="树的术语"></a>树的术语</h2></li>
+<li>one-way linked list</li>
+<li>双向链表</li>
+<li>two-way linked list<h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1><h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2>stack</li>
+</ul>
+<p>栈为只允许在表的末端进行插入和删除的线性表</p>
+<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>queue</p>
+<p>队列只允许在表的一段插入，在另一端删除</p>
+<h1 id="数组、串和广义表"><a href="#数组、串和广义表" class="headerlink" title="数组、串和广义表"></a>数组、串和广义表</h1><h2 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h2><p>数组是下标和值组成的序对的集合</p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>是n个字符的一个有限序列</p>
+<h2 id="广义表"><a href="#广义表" class="headerlink" title="广义表"></a>广义表</h2><p>n个表元素组成的有限序列</p>
+<h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><h2 id="树的术语"><a href="#树的术语" class="headerlink" title="树的术语"></a>树的术语</h2><ul>
 <li>结点</li>
 <li>结点的度</li>
 <li>叶结点</li>
@@ -1527,13 +1540,25 @@
 <li>深度为k的二叉树最少有k个结点，最多有$2^k-1$个结点</li>
 <li>对任何一颗非空二叉树，如果其叶节点数为$n_0$，度为2的非叶节点为$n_2$，则$n_0=n_2+1$</li>
 <li>具有n个结点的完全二叉树的深度为$\lceil log_2(n+1)\rceil$<h3 id="遍历算法"><a href="#遍历算法" class="headerlink" title="遍历算法"></a>遍历算法</h3></li>
-<li>前序遍历:根右左</li>
-<li>中序遍历:右根左</li>
-<li>后序遍历:右左根<h3 id="树与森林的遍历"><a href="#树与森林的遍历" class="headerlink" title="树与森林的遍历"></a>树与森林的遍历</h3></li>
+<li>前序遍历:根左右</li>
+<li>preorder traversal</li>
+<li>中序遍历:左根右</li>
+<li>inorder traversal</li>
+<li>后序遍历:左右根</li>
+<li>postorder traversal<h3 id="树与森林的遍历"><a href="#树与森林的遍历" class="headerlink" title="树与森林的遍历"></a>树与森林的遍历</h3></li>
 <li>广度优先</li>
-<li>深度优先<h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><h3 id="堆的分类"><a href="#堆的分类" class="headerlink" title="堆的分类"></a>堆的分类</h3></li>
+<li>breadth first search</li>
+<li>深度优先</li>
+<li>depth first search<h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2>heap</li>
+</ul>
+<h3 id="堆的分类"><a href="#堆的分类" class="headerlink" title="堆的分类"></a>堆的分类</h3><ul>
 <li>最大堆</li>
-<li>最小堆<h2 id="Huffman树"><a href="#Huffman树" class="headerlink" title="Huffman树"></a>Huffman树</h2>构造方法:让两个权值最小的结点优先结合成一个新结点，重复执行<h1 id="集合与字典"><a href="#集合与字典" class="headerlink" title="集合与字典"></a>集合与字典</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2>集合是成员的一个群组，具有相异性、唯一性和无序性。<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2>字典是一些元素的集合，每个集合有一个称作关键码的域，不同元素的关键码互不相同。<h1 id="收索结构"><a href="#收索结构" class="headerlink" title="收索结构"></a>收索结构</h1></li>
+<li>max heap</li>
+<li>最小堆</li>
+<li>min heap<h2 id="Huffman树"><a href="#Huffman树" class="headerlink" title="Huffman树"></a>Huffman树</h2>构造方法:让两个权值最小的结点优先结合成一个新结点，重复执行<h1 id="集合与字典"><a href="#集合与字典" class="headerlink" title="集合与字典"></a>集合与字典</h1><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2>集合是成员的一个群组，具有相异性、唯一性和无序性。<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2>dictionary</li>
+</ul>
+<p>字典是一些元素的集合，每个集合有一个称作关键码的域，不同元素的关键码互不相同。</p>
+<h1 id="收索结构"><a href="#收索结构" class="headerlink" title="收索结构"></a>收索结构</h1><ul>
 <li>二叉搜索树</li>
 <li>AVL树</li>
 <li>伸展树</li>
@@ -1562,12 +1587,19 @@
 <li>稳定性</li>
 <li>时空复杂度<h2 id="内部排序"><a href="#内部排序" class="headerlink" title="内部排序"></a>内部排序</h2><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3></li>
 <li>直接插入排序</li>
+<li>straight insertion sort</li>
 <li>折半插入排序</li>
-<li>希尔排序<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3></li>
+<li>binary insertion sort</li>
+<li>希尔排序</li>
+<li>Shell’s sort<h3 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h3></li>
 <li>冒泡排序</li>
-<li>快速排序<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3></li>
+<li>Bubble Sort</li>
+<li>快速排序</li>
+<li>quick sort<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3></li>
 <li>直接选择排序</li>
+<li>straight selection sort</li>
 <li>堆排序</li>
+<li>heap sort</li>
 </ul>
 ]]></content>
       <tags>
