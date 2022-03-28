@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="概述I&#x2F;O设备接口与CPU交换数据的方式 查询方式 中断方式 直接存储器存取方式总线技术总线的组成 数据总线 地址总线 控制总线总线传输操作过程 申请与仲裁阶段 寻址阶段 传输阶段 结束阶段I&#x2F;O端口地址译码技术I&#x2F;O端口地址编址方式 统一编制 独立编制定时和计时技术定时方法 软件定时 硬件定时外部硬件定时器 不可编程定时器 可编程定时器中断指CPU在正常运行程序时，由于外部&#x2F;内部随机事件或由程序">
+  <meta name="description" content="Computer Interface Technology and Application 概述I&#x2F;O设备接口与CPU交换数据的方式 查询方式  inquiry mode  中断方式  interrupt request mode  直接存储器存取方式  direct memory access mode 总线技术总线的组成 数据总线  data bus  地址总线  address bus  控">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机接口技术与应用">
 <meta property="og:url" content="http://yoursite.com/2022/03/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%BA%94%E7%94%A8/index.html">
 <meta property="og:site_name" content="呤游的家">
-<meta property="og:description" content="概述I&#x2F;O设备接口与CPU交换数据的方式 查询方式 中断方式 直接存储器存取方式总线技术总线的组成 数据总线 地址总线 控制总线总线传输操作过程 申请与仲裁阶段 寻址阶段 传输阶段 结束阶段I&#x2F;O端口地址译码技术I&#x2F;O端口地址编址方式 统一编制 独立编制定时和计时技术定时方法 软件定时 硬件定时外部硬件定时器 不可编程定时器 可编程定时器中断指CPU在正常运行程序时，由于外部&#x2F;内部随机事件或由程序">
+<meta property="og:description" content="Computer Interface Technology and Application 概述I&#x2F;O设备接口与CPU交换数据的方式 查询方式  inquiry mode  中断方式  interrupt request mode  直接存储器存取方式  direct memory access mode 总线技术总线的组成 数据总线  data bus  地址总线  address bus  控">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-03-22T15:20:40.000Z">
-<meta property="article:modified_time" content="2022-03-22T15:58:31.788Z">
+<meta property="article:modified_time" content="2022-03-27T16:46:25.719Z">
 <meta property="article:author" content="lingyoumax">
 <meta property="article:tag" content="aps">
 <meta name="twitter:card" content="summary">
@@ -218,10 +218,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-03-22 23:20:40 / 修改时间：23:58:31" itemprop="dateCreated datePublished" datetime="2022-03-22T23:20:40+08:00">2022-03-22</time>
+              <time title="创建时间：2022-03-22 23:20:40" itemprop="dateCreated datePublished" datetime="2022-03-22T23:20:40+08:00">2022-03-22</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-03-28 00:46:25" itemprop="dateModified" datetime="2022-03-28T00:46:25+08:00">2022-03-28</time>
+              </span>
 
           
   
@@ -248,33 +254,98 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="I-O设备接口与CPU交换数据的方式"><a href="#I-O设备接口与CPU交换数据的方式" class="headerlink" title="I/O设备接口与CPU交换数据的方式"></a>I/O设备接口与CPU交换数据的方式</h2><ul>
-<li>查询方式</li>
-<li>中断方式</li>
-<li>直接存储器存取方式<h1 id="总线技术"><a href="#总线技术" class="headerlink" title="总线技术"></a>总线技术</h1><h2 id="总线的组成"><a href="#总线的组成" class="headerlink" title="总线的组成"></a>总线的组成</h2></li>
-<li>数据总线</li>
-<li>地址总线</li>
-<li>控制总线<h2 id="总线传输操作过程"><a href="#总线传输操作过程" class="headerlink" title="总线传输操作过程"></a>总线传输操作过程</h2></li>
-<li>申请与仲裁阶段</li>
-<li>寻址阶段</li>
-<li>传输阶段</li>
-<li>结束阶段<h1 id="I-O端口地址译码技术"><a href="#I-O端口地址译码技术" class="headerlink" title="I/O端口地址译码技术"></a>I/O端口地址译码技术</h1><h2 id="I-O端口地址编址方式"><a href="#I-O端口地址编址方式" class="headerlink" title="I/O端口地址编址方式"></a>I/O端口地址编址方式</h2></li>
-<li>统一编制</li>
-<li>独立编制<h1 id="定时和计时技术"><a href="#定时和计时技术" class="headerlink" title="定时和计时技术"></a>定时和计时技术</h1><h2 id="定时方法"><a href="#定时方法" class="headerlink" title="定时方法"></a>定时方法</h2></li>
-<li>软件定时</li>
-<li>硬件定时<h2 id="外部硬件定时器"><a href="#外部硬件定时器" class="headerlink" title="外部硬件定时器"></a>外部硬件定时器</h2></li>
-<li>不可编程定时器</li>
-<li>可编程定时器<h1 id="中断"><a href="#中断" class="headerlink" title="中断"></a>中断</h1>指CPU在正常运行程序时，由于外部/内部随机事件或由程序预先安排的事件，引起CPU暂时中断正在执行的程序，而被转到为外部/事件或为预先安排的事件服务的程序中去，服务完毕，再返回去继续执行被暂时中断的程序。<h2 id="硬中断"><a href="#硬中断" class="headerlink" title="硬中断"></a>硬中断</h2></li>
-<li>可屏蔽中断</li>
-<li>不可屏蔽中断<h2 id="软中断"><a href="#软中断" class="headerlink" title="软中断"></a>软中断</h2></li>
-<li>DOS功能调用</li>
-<li>BIOS功能调用<h1 id="DMA技术"><a href="#DMA技术" class="headerlink" title="DMA技术"></a>DMA技术</h1></li>
-<li>单字节方式</li>
-<li>连续(块字节)方式</li>
-<li>请求(询问)方式<h1 id="并行接口"><a href="#并行接口" class="headerlink" title="并行接口"></a>并行接口</h1>指接口电路与I/O设备之间采用多根数据线进行数据传输。<h1 id="串行通信"><a href="#串行通信" class="headerlink" title="串行通信"></a>串行通信</h1><h2 id="工作方式"><a href="#工作方式" class="headerlink" title="工作方式"></a>工作方式</h2></li>
-<li>全双工:通信双方同时进行发送和接收操作</li>
-<li>半双工:通信双方分时进行发送和接收操作</li>
-<li>单工:通信双方只能进行一个方向的传输，不能有双向传输</li>
+        <p>Computer Interface Technology and Application</p>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="I-O设备接口与CPU交换数据的方式"><a href="#I-O设备接口与CPU交换数据的方式" class="headerlink" title="I/O设备接口与CPU交换数据的方式"></a>I/O设备接口与CPU交换数据的方式</h2><ul>
+<li><p>查询方式</p>
+</li>
+<li><p>inquiry mode</p>
+</li>
+<li><p>中断方式</p>
+</li>
+<li><p>interrupt request mode</p>
+</li>
+<li><p>直接存储器存取方式</p>
+</li>
+<li><p>direct memory access mode</p>
+<h1 id="总线技术"><a href="#总线技术" class="headerlink" title="总线技术"></a>总线技术</h1><h2 id="总线的组成"><a href="#总线的组成" class="headerlink" title="总线的组成"></a>总线的组成</h2></li>
+<li><p>数据总线</p>
+</li>
+<li><p>data bus</p>
+</li>
+<li><p>地址总线</p>
+</li>
+<li><p>address bus</p>
+</li>
+<li><p>控制总线</p>
+</li>
+<li><p>control bus</p>
+<h2 id="总线传输操作过程"><a href="#总线传输操作过程" class="headerlink" title="总线传输操作过程"></a>总线传输操作过程</h2></li>
+<li><p>申请与仲裁阶段</p>
+</li>
+<li><p>application and arbitration stage</p>
+</li>
+<li><p>寻址阶段</p>
+</li>
+<li><p>search address stage</p>
+</li>
+<li><p>传输阶段</p>
+</li>
+<li><p>transmission stage</p>
+</li>
+<li><p>结束阶段</p>
+</li>
+<li><p>ending stage</p>
+<h1 id="I-O端口地址译码技术"><a href="#I-O端口地址译码技术" class="headerlink" title="I/O端口地址译码技术"></a>I/O端口地址译码技术</h1><h2 id="I-O端口地址编址方式"><a href="#I-O端口地址编址方式" class="headerlink" title="I/O端口地址编址方式"></a>I/O端口地址编址方式</h2></li>
+<li><p>统一编制</p>
+</li>
+<li><p>unified addressing</p>
+</li>
+<li><p>独立编制</p>
+</li>
+<li><p>independent addressing</p>
+<h1 id="定时和计时技术"><a href="#定时和计时技术" class="headerlink" title="定时和计时技术"></a>定时和计时技术</h1></li>
+<li><p>timing and time</p>
+<h2 id="定时方法"><a href="#定时方法" class="headerlink" title="定时方法"></a>定时方法</h2></li>
+<li><p>软件定时</p>
+</li>
+<li><p>硬件定时</p>
+<h1 id="中断"><a href="#中断" class="headerlink" title="中断"></a>中断</h1><p>指CPU在正常运行程序时，由于外部/内部随机事件或由程序预先安排的事件，引起CPU暂时中断正在执行的程序，而被转到为外部/事件或为预先安排的事件服务的程序中去，服务完毕，再返回去继续执行被暂时中断的程序。</p>
+<h2 id="硬中断"><a href="#硬中断" class="headerlink" title="硬中断"></a>硬中断</h2><p>hardware interrupt request</p>
+</li>
+<li><p>可屏蔽中断</p>
+</li>
+<li><p>maskable interrupt</p>
+</li>
+<li><p>不可屏蔽中断</p>
+</li>
+<li><p>non maskable interrupt</p>
+<h2 id="软中断"><a href="#软中断" class="headerlink" title="软中断"></a>软中断</h2><p>software interrupt request</p>
+</li>
+<li><p>DOS功能调用</p>
+</li>
+<li><p>BIOS功能调用</p>
+<h1 id="DMA技术"><a href="#DMA技术" class="headerlink" title="DMA技术"></a>DMA技术</h1><p>direct memory access</p>
+</li>
+<li><p>单字节方式</p>
+</li>
+<li><p>连续(块字节)方式</p>
+</li>
+<li><p>请求(询问)方式</p>
+<h1 id="并行接口"><a href="#并行接口" class="headerlink" title="并行接口"></a>并行接口</h1><p>parallel<br>指接口电路与I/O设备之间采用多根数据线进行数据传输。</p>
+<h1 id="串行通信"><a href="#串行通信" class="headerlink" title="串行通信"></a>串行通信</h1><p>serial communication</p>
+<h2 id="工作方式"><a href="#工作方式" class="headerlink" title="工作方式"></a>工作方式</h2></li>
+<li><p>全双工:通信双方同时进行发送和接收操作</p>
+</li>
+<li><p>full duplex</p>
+</li>
+<li><p>半双工:通信双方分时进行发送和接收操作</p>
+</li>
+<li><p>half duplex</p>
+</li>
+<li><p>单工:通信双方只能进行一个方向的传输，不能有双向传输</p>
+</li>
+<li><p>simplex duplex</p>
+</li>
 </ul>
 
     </div>
@@ -314,8 +385,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/22/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86B/" rel="prev" title="编译原理B">
-      <i class="fa fa-chevron-left"></i> 编译原理B
+    <a href="/2022/03/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/" rel="prev" title="操作系统课程设计">
+      <i class="fa fa-chevron-left"></i> 操作系统课程设计
     </a></div>
       <div class="post-nav-item">
     <a href="/2022/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8E%A5%E5%8F%A3%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A1/" rel="next" title="计算机接口课程设计">
@@ -380,7 +451,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#I-O%E8%AE%BE%E5%A4%87%E6%8E%A5%E5%8F%A3%E4%B8%8ECPU%E4%BA%A4%E6%8D%A2%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">I&#x2F;O设备接口与CPU交换数据的方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%8A%80%E6%9C%AF"><span class="nav-number">2.</span> <span class="nav-text">总线技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-number">2.1.</span> <span class="nav-text">总线的组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E4%BC%A0%E8%BE%93%E6%93%8D%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-number">2.2.</span> <span class="nav-text">总线传输操作过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#I-O%E7%AB%AF%E5%8F%A3%E5%9C%B0%E5%9D%80%E8%AF%91%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="nav-number">3.</span> <span class="nav-text">I&#x2F;O端口地址译码技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#I-O%E7%AB%AF%E5%8F%A3%E5%9C%B0%E5%9D%80%E7%BC%96%E5%9D%80%E6%96%B9%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">I&#x2F;O端口地址编址方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E5%92%8C%E8%AE%A1%E6%97%B6%E6%8A%80%E6%9C%AF"><span class="nav-number">4.</span> <span class="nav-text">定时和计时技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E6%96%B9%E6%B3%95"><span class="nav-number">4.1.</span> <span class="nav-text">定时方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E7%A1%AC%E4%BB%B6%E5%AE%9A%E6%97%B6%E5%99%A8"><span class="nav-number">4.2.</span> <span class="nav-text">外部硬件定时器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E6%96%AD"><span class="nav-number">5.</span> <span class="nav-text">中断</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A1%AC%E4%B8%AD%E6%96%AD"><span class="nav-number">5.1.</span> <span class="nav-text">硬中断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%B8%AD%E6%96%AD"><span class="nav-number">5.2.</span> <span class="nav-text">软中断</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DMA%E6%8A%80%E6%9C%AF"><span class="nav-number">6.</span> <span class="nav-text">DMA技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B9%B6%E8%A1%8C%E6%8E%A5%E5%8F%A3"><span class="nav-number">7.</span> <span class="nav-text">并行接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%B2%E8%A1%8C%E9%80%9A%E4%BF%A1"><span class="nav-number">8.</span> <span class="nav-text">串行通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F"><span class="nav-number">8.1.</span> <span class="nav-text">工作方式</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#I-O%E8%AE%BE%E5%A4%87%E6%8E%A5%E5%8F%A3%E4%B8%8ECPU%E4%BA%A4%E6%8D%A2%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">I&#x2F;O设备接口与CPU交换数据的方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E6%8A%80%E6%9C%AF"><span class="nav-number">2.</span> <span class="nav-text">总线技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E7%9A%84%E7%BB%84%E6%88%90"><span class="nav-number">2.1.</span> <span class="nav-text">总线的组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BA%BF%E4%BC%A0%E8%BE%93%E6%93%8D%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-number">2.2.</span> <span class="nav-text">总线传输操作过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#I-O%E7%AB%AF%E5%8F%A3%E5%9C%B0%E5%9D%80%E8%AF%91%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="nav-number">3.</span> <span class="nav-text">I&#x2F;O端口地址译码技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#I-O%E7%AB%AF%E5%8F%A3%E5%9C%B0%E5%9D%80%E7%BC%96%E5%9D%80%E6%96%B9%E5%BC%8F"><span class="nav-number">3.1.</span> <span class="nav-text">I&#x2F;O端口地址编址方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E5%92%8C%E8%AE%A1%E6%97%B6%E6%8A%80%E6%9C%AF"><span class="nav-number">4.</span> <span class="nav-text">定时和计时技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E6%97%B6%E6%96%B9%E6%B3%95"><span class="nav-number">4.1.</span> <span class="nav-text">定时方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E6%96%AD"><span class="nav-number">5.</span> <span class="nav-text">中断</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A1%AC%E4%B8%AD%E6%96%AD"><span class="nav-number">5.1.</span> <span class="nav-text">硬中断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%B8%AD%E6%96%AD"><span class="nav-number">5.2.</span> <span class="nav-text">软中断</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DMA%E6%8A%80%E6%9C%AF"><span class="nav-number">6.</span> <span class="nav-text">DMA技术</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B9%B6%E8%A1%8C%E6%8E%A5%E5%8F%A3"><span class="nav-number">7.</span> <span class="nav-text">并行接口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%B2%E8%A1%8C%E9%80%9A%E4%BF%A1"><span class="nav-number">8.</span> <span class="nav-text">串行通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F"><span class="nav-number">8.1.</span> <span class="nav-text">工作方式</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -396,7 +467,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">90</span>
+          <span class="site-state-item-count">99</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
